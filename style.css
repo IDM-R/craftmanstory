@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/*共通部分
+-----------------*/
+html{
+    font-size:100%;
+}
+body{
+    font-family:"游明朝";
+    line-height:1.7;
+    color:black
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width:100%
+}
+
+/*HEADER
+-----------------*/
+.logo{
+    width: 300px;
+    margin-top:0px;
+}
+
+.main-nav{
+    display:flex;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    margin-top:50px;
+    list-style:none;
+    font-weight: bold;
+}
+.main-nav li{
+    margin-left:36px;
+}
+.main-nav a{
+    color:#333333d6
+}
+
+.page-header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.wrapper{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 4%;
+}
+
+/*HOME
+-----------------*/
+.home-content{
+    text-align:center;
+    margin-top: 10%;
+    color:#476778
+}
+.home-content{
+    font-size:1.5rem
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin:10px 0 42px;
+}

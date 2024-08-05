@@ -64,6 +64,8 @@ img {
     margin:10px 0 42px;
 }
 
+/* headder-content
+-----------------*/
 
 .introduction-website{
     text-align:center;
@@ -71,7 +73,31 @@ img {
     font-size: 1.125rem;
     color:#5d8585;
 }
-
 .introduction-website h3{
-    font-size:2rem
+    font-size:2rem;
+    color:#5d8585
+}
+
+
+
+.introduction-content{
+    margin-top:50px;
+    display:flex;
+    color:#5d8585
+}
+.second-intro{
+    display:center;
+    text-align: center;
+    font-size:2rem;
+    color:#5d8585;
+    margin-top:100px;
+}
+.introduction-content img{
+    flex-basis:50%;
+    text-align: center;
+    min-height: 300px;
+}
+.introduction-content p{
+    flex-basis:50%;
+    text-align: center;
 }

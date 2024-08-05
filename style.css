@@ -54,7 +54,7 @@ img {
 .home-content{
     text-align:center;
     margin-top: 10%;
-    color:#476778
+    color:#5d8585 
 }
 .home-content{
     font-size:1.5rem
@@ -62,4 +62,16 @@ img {
 .home-content p {
     font-size: 1.125rem;
     margin:10px 0 42px;
+}
+
+
+.introduction-website{
+    text-align:center;
+    margin-top:500px;
+    font-size: 1.125rem;
+    color:#5d8585;
+}
+
+.introduction-website h3{
+    font-size:2rem
 }

@@ -64,6 +64,7 @@ img {
 .home-content p {
     font-size: 1.125rem;
     margin:10px 0 42px;
+    color:#888888
 }
 
 /* headder-content
@@ -79,7 +80,7 @@ img {
     text-align:center;
     margin-top:50px;
     font-size: 1.125rem;
-    color:#5d8585;
+    color:#888888;
 }
 .introduction-website h3{
     font-size:2rem;
@@ -91,7 +92,7 @@ img {
 .introduction-content{
     margin-top:50px;
     display:flex;
-    color:#5d8585
+    color:#888888;
 }
 .second-intro{
     display:center;

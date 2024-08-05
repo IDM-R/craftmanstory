@@ -54,10 +54,12 @@ img {
 .home-content{
     text-align:center;
     margin-top: 10%;
-    color:#5d8585 
-}
-.home-content{
+    color:#5d8585;
+    min-height:400px;
     font-size:1.5rem
+}
+.home-content h2{
+    align-content: center;
 }
 .home-content p {
     font-size: 1.125rem;
@@ -67,9 +69,15 @@ img {
 /* headder-content
 -----------------*/
 
+.whats-new{
+    text-align: center;
+    font-size:2rem;
+}
+
+
 .introduction-website{
     text-align:center;
-    margin-top:500px;
+    margin-top:50px;
     font-size: 1.125rem;
     color:#5d8585;
 }
@@ -90,7 +98,7 @@ img {
     text-align: center;
     font-size:2rem;
     color:#5d8585;
-    margin-top:100px;
+    margin-top:50px;
 }
 .introduction-content img{
     flex-basis:50%;

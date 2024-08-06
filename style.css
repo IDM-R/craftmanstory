@@ -90,7 +90,7 @@ img {
 
 
 .introduction-content{
-    margin-top:50px;
+    margin:50px 50px;
     display:flex;
     color:#888888;
 }
@@ -120,4 +120,23 @@ img {
     margin-top:50px;
     text-align:center;
     font-size:2rem;
+}
+
+.article{
+    display:inline-block;
+    width:50%;
+    height:auto;
+    padding:0 10px;
+    position:relative;
+    vertical-align:top;
+    margin:20px 100px;
+}
+
+.article_title{
+    font-size:20px;
+    color:#363d46;
+}
+.article_date{
+    font-size:15px;
+    color:#363d46;
 }

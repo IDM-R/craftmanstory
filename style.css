@@ -110,3 +110,14 @@ img {
     flex-basis:50%;
     text-align: center;
 }
+
+/*article content
+-----------------*/
+
+
+.article-intro{
+    color:#5d8585;
+    margin-top:50px;
+    text-align:center;
+    font-size:2rem;
+}

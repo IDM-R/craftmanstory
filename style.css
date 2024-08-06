@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/*共通部分
+-----------------*/
+html{
+    font-size:100%;
+}
+body{
+    font-family:"游明朝";
+    line-height:1.7;
+    color:black
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width:100%
+}
+
+/*HEADER
+-----------------*/
+.logo{
+    width: 300px;
+    margin-top:0px;
+}
+
+.main-nav{
+    display:flex;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    margin-top:50px;
+    list-style:none;
+    font-weight: bold;
+}
+.main-nav li{
+    margin-left:36px;
+}
+.main-nav a{
+    color:#363d46
+}
+
+.page-header{
+    display: flex;
+    justify-content:space-between;
+}
+
+.wrapper{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 4%;
+}
+
+/*HOME
+-----------------*/
+.home-content{
+    text-align:center;
+    margin-top: 10%;
+    color:#5d8585;
+    min-height:400px;
+    font-size:1.5rem
+}
+.home-content h2{
+    align-content: center;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin:10px 0 42px;
+    color:#888888
+}
+
+/* headder-content
+-----------------*/
+
+.whats-new{
+    text-align: center;
+    font-size:2rem;
+}
+
+
+.introduction-website{
+    text-align:center;
+    margin-top:50px;
+    font-size: 1.125rem;
+    color:#888888;
+}
+.introduction-website h3{
+    font-size:2rem;
+    color:#5d8585
+}
+
+
+
+.introduction-content{
+    margin-top:50px;
+    display:flex;
+    color:#888888;
+}
+.second-intro{
+    display:center;
+    text-align: center;
+    font-size:2rem;
+    color:#5d8585;
+    margin-top:50px;
+}
+.introduction-content img{
+    flex-basis:50%;
+    text-align: center;
+    min-height: 300px;
+}
+.introduction-content p{
+    flex-basis:50%;
+    text-align: center;
+}

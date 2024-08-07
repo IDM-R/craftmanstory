@@ -31,6 +31,10 @@ img {
     list-style:none;
     font-weight: bold;
 }
+.lang{
+    border-bottom: 1.5px solid
+}
+
 .main-nav li{
     margin-left:36px;
 }
@@ -90,9 +94,10 @@ img {
 
 
 .introduction-content{
-    margin-top:50px;
+    margin:50px 50px;
     display:flex;
     color:#888888;
+    padding:8%;
 }
 .second-intro{
     display:center;
@@ -109,4 +114,28 @@ img {
 .introduction-content p{
     flex-basis:50%;
     text-align: center;
+}
+
+/*article content
+-----------------*/
+
+
+.article-intro{
+    color:#5d8585;
+    margin-top:50px;
+    text-align:center;
+    font-size:2rem;
+}
+
+.grid{
+    display:grid;
+    gap:26px;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top:6%;
+    margin-bottom:50px;
+}
+
+.item h4{
+    font-size:20px;
+    color:#363d46;
 }

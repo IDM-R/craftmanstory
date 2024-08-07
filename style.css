@@ -129,3 +129,8 @@ img {
     margin-top:6%;
     margin-bottom:50px;
 }
+
+.item h4{
+    font-size:20px;
+    color:#363d46;
+}

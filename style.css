@@ -94,10 +94,10 @@ img {
 
 
 .introduction-content{
-    margin:50px 50px;
+    margin:0% 50px;
     display:flex;
     color:#888888;
-    padding:8%;
+    padding:0% 10%;
 }
 .second-intro{
     display:center;
@@ -109,12 +109,13 @@ img {
 .introduction-content img{
     flex-basis:50%;
     text-align: center;
-    min-height: 300px;
 }
 .introduction-content p{
     flex-basis:50%;
     text-align: center;
+    align-content: center;
 }
+
 
 /*article content
 -----------------*/

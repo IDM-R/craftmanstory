@@ -7,7 +7,7 @@ html{
 body{
     font-family:"游明朝",serif;
     line-height:1.7;
-    color:black
+    color:#003366;
 }
 a {
     text-decoration: none;
@@ -58,7 +58,7 @@ img {
 .home-content{
     text-align:center;
     margin-top: 10%;
-    color:#5d8585;
+    color:#003366;
     min-height:400px;
     font-size:1.5rem
 }
@@ -68,7 +68,7 @@ img {
 .home-content p {
     font-size: 1.125rem;
     margin:10px 0 42px;
-    color:#888888
+    color:#363d46;
 }
 
 /* headder-content
@@ -84,26 +84,27 @@ img {
     text-align:center;
     margin-top:50px;
     font-size: 1.125rem;
-    color:#888888;
+    color:#363d46;
 }
 .introduction-website h3{
     font-size:2rem;
-    color:#5d8585
+    color:#003366
 }
+
 
 
 
 .introduction-content{
     margin:0% 50px;
     display:flex;
-    color:#888888;
+    color:#363d46;
     padding:0% 10%;
 }
 .second-intro{
     display:center;
     text-align: center;
     font-size:2rem;
-    color:#5d8585;
+    color:#003366;
     margin-top:50px;
 }
 .introduction-content img{
@@ -117,12 +118,12 @@ img {
 }
 
 
-/*article content
+/*article content1
 -----------------*/
 
 
 .article-intro{
-    color:#5d8585;
+    color:#003366;
     margin-top:50px;
     text-align:center;
     font-size:2rem;
@@ -131,7 +132,7 @@ img {
 .grid{
     display:grid;
     gap:26px;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     margin-top:6%;
     margin-bottom:50px;
 }
@@ -139,4 +140,57 @@ img {
 .item h4{
     font-size:20px;
     color:#363d46;
+}
+
+/*article content2
+-----------------*/
+
+.card-container{
+    color: #fff;
+    display: flex;
+    margin: 20px 10%;
+    width: 100%;
+    box-shadow: 0 12px 10px -6px rgba(0,0,0,.25);
+    background-color: rgba(163, 241, 241, 0.1);
+}
+.card-container a{
+    text-decoration: none;
+    color:#003366;
+}
+
+.card-text{
+    width:100%;
+    margin: 10px 10px;
+}
+.card-text h3{
+    padding-top: px;
+    font-size: 20px;
+    align-content:center;
+}
+.card-text h6{
+    font-size: 10px;
+    color:#363d46
+}
+.card-img{
+    width: 50%;
+}
+
+.card-img img{
+    width:100%;
+    height:100%;
+    vertical-align:bottom;
+}
+/*PCサイズ*/
+@media screen and (min-width:650px) {
+    .card-container{
+        max-width: 1000px;
+        height: 200px;
+    }
+
+    .card-text h3{
+        font-size: 20px;
+    }
+    .card-text h6{
+        font-size: 10px;
+    }
 }

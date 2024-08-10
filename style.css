@@ -5,10 +5,19 @@ html{
     font-size:100%;
 }
 body{
-    font-family:"游明朝",serif;
+    font-family:"Klee One";
     line-height:1.7;
     color:#003366;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho+B1&display=swap');
+.klee-one-regular {
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 a {
     text-decoration: none;
 }
@@ -60,7 +69,7 @@ img {
     margin-top: 10%;
     color:#003366;
     min-height:400px;
-    font-size:1.5rem
+    font-size:1.5rem;
 }
 .home-content h2{
     align-content: center;
@@ -79,12 +88,19 @@ img {
     font-size:2rem;
 }
 
+.border{
+    position:relative;
+    text-align: center;
+    font-size: 1px;
+}
 
 .introduction-website{
     text-align:center;
     margin-top:50px;
     font-size: 1.125rem;
     color:#363d46;
+    width:70%;
+    margin:0 auto;
 }
 .introduction-website h3{
     font-size:2rem;
@@ -93,20 +109,43 @@ img {
 
 
 
-
+.intro-content{
+    width:70%;
+    margin:0 auto;
+}
 .introduction-content{
     margin:0% 50px;
     display:flex;
     color:#363d46;
     padding:0% 10%;
 }
-.second-intro{
+.border{
     display:center;
     text-align: center;
     font-size:2rem;
     color:#003366;
-    margin-top:50px;
+    margin-top:80px;
 }
+.border:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 1px #009bc6;
+    transform: translateX(-50%);
+    animation: border_anim 3s linear forwards;
+    display:inline
+  }
+  @keyframes border_anim {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
 .introduction-content img{
     flex-basis:50%;
     text-align: center;
@@ -151,11 +190,11 @@ img {
     margin: 20px 10%;
     width: 100%;
     box-shadow: 0 12px 10px -6px rgba(0,0,0,.25);
-    background-color: rgba(163, 241, 241, 0.1);
+    background-color:#003366;
 }
 .card-container a{
     text-decoration: none;
-    color:#003366;
+    color:#fff;
 }
 
 .card-text{
@@ -164,12 +203,12 @@ img {
 }
 .card-text h3{
     padding-top: px;
-    font-size: 20px;
+    font-size: 23px;
     align-content:center;
 }
 .card-text h6{
     font-size: 10px;
-    color:#363d46
+    color:white
 }
 .card-img{
     width: 50%;
@@ -188,7 +227,7 @@ img {
     }
 
     .card-text h3{
-        font-size: 20px;
+        font-size: 22px;
     }
     .card-text h6{
         font-size: 10px;

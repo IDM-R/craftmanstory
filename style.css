@@ -5,20 +5,13 @@ html{
     font-size:100%;
 }
 body{
-    font-family:"Kiwi Maru";
+    font-family:"游ゴシック Medium";
     line-height:1.7;
     color:#003366;
-    font-weight: 200
+    font-weight: 200;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
-
-
-.klee-one-regular {
-    font-family: "Zen Maru Gothic", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
   
 
 a {
@@ -43,7 +36,7 @@ a {
     display:flex;
     font-size:1.6rem;
     text-transform:uppercase;
-    margin-top:50px;
+    margin-top:40px;
     list-style:none;
     font-weight: bold;
 }
@@ -122,37 +115,38 @@ a {
 
 .introduction-website{
     text-align:center;
-    margin-top:50px;
+    margin:0 auto;
+    margin-top:80px;
     font-size: 1.125rem;
     color:#363d46;
     width:70%;
-    margin:0 auto;
 }
 .introduction-website h3{
     font-size:2rem;
-    color:#003366
+    color:#003366;
 }
 .introduction-website p{
     margin:0% 20%;
+    filter: drop-shadow(10px 10px 5px #717171);
 }
 
 
-.intro-content{
+#intro-content{
     width:70%;
-    margin:0 auto;
+    margin:100px auto;
+
 }
 .introduction-content{
-    margin:0% 50px;
+    margin:0 50px;
     display:flex;
     color:#363d46;
-    padding:0% 10%;
 }
 .border{
     display:center;
     text-align: center;
     font-size:2rem;
     color:#003366;
-    margin-top:80px;
+    margin-top:200px;
     border-bottom:4px dotted #009bc6;
     font-weight: 200;
 }
@@ -161,12 +155,12 @@ a {
 
 .introduction-content img{
     flex-basis:50%;
-    text-align: center;
 }
 .introduction-content p{
     flex-basis:50%;
     text-align: center;
     align-content: center;
+    filter: drop-shadow(10px 10px 5px #717171);
 }
 
 
@@ -176,10 +170,10 @@ a {
 
 .article-intro{
     color:#003366;
-    margin-top:50px;
+    margin-top:200px;
     text-align:center;
     font-size:2rem;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .grid{
@@ -210,7 +204,6 @@ a {
     display:flex;
     width:100%;
     background: #fff;
-    margin:0;
 }
 .card-text2{
     width:100%;
@@ -241,7 +234,7 @@ a {
         list-style:none;
         height: 200px;
         margin:0 auto;
-        margin-bottom: 16px;
+        margin-bottom: 100px;
         border-style:double;
         border-color:#fff;
         background-color:#003366;
@@ -255,10 +248,26 @@ a {
     .card-text2 h3{
         font-size: 24px;
         padding-left: 15px;
+        font-weight: 200;
     }
     .card-text2 h6{
         font-size: 10px;
         padding-left: 16px;
     }
+}
+
+/*フッター
+-----------------*/
+
+footer{
+    background:#003366;
+    text-align:center;
+    padding:26px 0;
+    margin-top:50px;
+}
+
+footer p{
+    color:#fff;
+    font-size:0.875rem;
 }
 

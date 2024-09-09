@@ -23,10 +23,44 @@ a {
 
 /*HEADER
 -----------------*/
-.page-title{
+.page-title1{
     color:#fff;
     filter: drop-shadow(10px 10px 5px #003366);
+    margin:0px;
+
+    animation-name: titleAnime;
+    animation-fill-mode:backwards;
+    animation-duration:3s;
+    count:infinite;
+    animation-timing-function: ease;
+    animation-delay:0.3s;
+    animation-direction:normal;
 }
+@keyframes titleAnime{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.page-title2{
+    color:#fff;
+    filter: drop-shadow(10px 10px 5px #003366);
+    margin:0px;
+
+    animation-name: titleAnime;
+    animation-fill-mode:backwards;
+    animation-duration:3s;
+    count:infinite;
+    animation-timing-function: ease;
+    animation-delay:0.9s;
+    animation-direction:normal;
+}
+
+
+
+
 .logo{
     width: 300px;
     margin-top:0px;
@@ -36,7 +70,7 @@ a {
     display:flex;
     font-size:1.6rem;
     text-transform:uppercase;
-    margin-top:40px;
+    margin-top:30px;
     list-style:none;
     font-weight: bold;
 }
@@ -134,12 +168,13 @@ a {
 #intro-content{
     width:70%;
     margin:100px auto;
-
 }
 .introduction-content{
     margin:0 50px;
     display:flex;
     color:#363d46;
+    background-color:aliceblue;
+    background-clip:content-box;
 }
 .border{
     display:center;
@@ -187,6 +222,12 @@ a {
 .item h4{
     font-size:20px;
     color:#363d46;
+}
+
+
+.img-background{
+    background-image: url(背景サンプル_w_trans\ \(1\).png);
+    background-repeat: no-repeat;
 }
 
 /*article content2
@@ -270,4 +311,86 @@ footer p{
     color:#fff;
     font-size:0.875rem;
 }
+
+/*animation*/
+.line{
+    position: relative; /* 枠線が書かれる基点*/
+  }
+  
+  /*上下線*/
+  .line::before,
+  .line::after{
+    position: absolute;
+    content:"";
+    width:0;
+    height:1px;
+    background:#003366;/* 枠線の色*/
+  }
+  
+  /*左右線*/
+  .line2::before,
+  .line2::after{
+    position: absolute;
+    content:"";
+    width: 1px;
+    height:0;
+    background:#003366;/* 枠線の色*/
+  }
+  
+  /*上線*/
+  .line::before {
+    top:0;
+    left:0;
+    animation: lineAnime .5s linear 0s forwards;/*表示されて0秒後に上線が0.5秒かけて表示*/
+  }
+  
+  /*右線*/
+  .line2::before{ 
+    top:0;
+    right:0;
+    animation: lineAnime2 .5s linear .5s forwards;/*表示されて0.5秒後に右線が0.5秒かけて表示*/
+  }
+  
+  /*下線*/
+  .line::after { 
+    bottom:0;
+    right:0;
+    animation: lineAnime .5s linear 1s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
+  }
+  
+  /*左線*/
+  .line2::after{ 
+    bottom:0;
+    left:0;
+    animation: lineAnime2 .5s linear 1.5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
+  }
+  
+  @keyframes lineAnime {
+    0% {width:0%;}
+      100%{width:100%;}
+  }
+  
+  @keyframes lineAnime2 {
+    0% {height:0%;}
+      100%{height:100%;}
+  }
+  
+  /*枠線内側の要素*/
+  .line .lineinappear{
+    animation: lineInnerAnime .5s linear 1.5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
+    opacity: 0;/*初期値を透過0にする*/ 
+  }
+  
+  @keyframes lineInnerAnime{
+    0% {opacity:0;}
+      100% {opacity:1;}
+  }
+  
+  
+  /*========= レイアウトのためのCSS ===============*/
+  
+  .line{
+    box-sizing:border-box;
+    margin:0 35%;
+  }
 

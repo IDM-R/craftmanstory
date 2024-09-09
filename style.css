@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*共通部分
+-----------------*/
+html{
+    font-size:100%;
+}
+body{
+    font-family:"游ゴシック Medium";
+    line-height:1.7;
+    color:#003366;
+    font-weight: 200;
+}

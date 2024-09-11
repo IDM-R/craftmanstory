@@ -432,3 +432,11 @@ footer p{
     font-weight:300;
     margin:0px 0px
 }
+.thanks-name{
+    text-decoration: underline 1px #003366;
+}
+
+.thanks-link{
+    text-decoration: underline 1px rgb(84, 1, 84);
+    color:rgb(84, 1, 84)
+}

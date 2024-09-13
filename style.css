@@ -1,396 +1,456 @@
 @charset "UTF-8";
 /*共通部分
 -----------------*/
-html{
-    font-size:100%;
-}
-body{
-    font-family:"游ゴシック Medium";
-    line-height:1.7;
-    color:#003366;
-    font-weight: 200;
+body {
+  font-family: メイリオ, Hiragino Sans; /**フォント変えました**/
+  margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
-  
-
-a {
-    text-decoration: none;
-    color:#003366;
-    font-weight: 200;
+.black_border {
+  margin: 0;
+  border: none;
+  border-bottom: 4px dashed #0c0c0c;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-
 
 /*HEADER
 -----------------*/
-.page-title1{
-    color:#fff;
-    filter: drop-shadow(10px 10px 5px #003366);
-    margin:0px;
-
-    animation-name: titleAnime;
-    animation-fill-mode:backwards;
-    animation-duration:3s;
-    count:infinite;
-    animation-timing-function: ease;
-    animation-delay:0.3s;
-    animation-direction:normal;
-}
-@keyframes titleAnime{
-    0%{
-        opacity:0;
-    }
-    100%{
-        opacity:1;
-    }
-}
-.page-title2{
-    color:#fff;
-    filter: drop-shadow(10px 10px 5px #003366);
-    margin:0px;
-
-    animation-name: titleAnime;
-    animation-fill-mode:backwards;
-    animation-duration:3s;
-    count:infinite;
-    animation-timing-function: ease;
-    animation-delay:0.9s;
-    animation-direction:normal;
+.header-title {
+  /**nav verの左上 Craftman Story**/
+  font-weight: bold;
+  color: #fff;
+  filter: drop-shadow(10px 10px 5px #003366);
 }
 
-
-
-
-.logo{
-    width: 300px;
-    margin-top:0px;
+.page-title1 {
+  color: #fff;
+  filter: drop-shadow(10px 10px 5px #003366);
+  margin: 0px;
+  animation-name: titleAnime;
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-direction: normal;
+}
+@keyframes titleAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.page-title2 {
+  color: #fff;
+  filter: drop-shadow(10px 10px 5px #003366);
+  margin: 0px;
+  animation-name: titleAnime;
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 0.9s;
+  animation-direction: normal;
 }
 
-.main-nav{
-    display:flex;
-    font-size:1.6rem;
-    text-transform:uppercase;
-    margin-top:30px;
-    list-style:none;
-    font-weight: bold;
-}
-.lang{
-    border-bottom: 1.5px solid
+.logo {
+  width: 300px;
+  margin-top: 0px;
 }
 
-.main-nav li{
-    margin-left:36px;
+.main-nav {
+  display: flex;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+  list-style: none;
+  font-weight: bold;
 }
-.main-nav a{
-    color:#363d46
+.lang {
+  border-bottom: 1.5px solid;
 }
 
-.page-header{
-    display: flex;
-    justify-content:space-between;
+.main-nav li {
+  margin-left: 36px;
+}
+.main-nav a {
+  color: #363d46;
 }
 
-.wrapper{
-    max-width:1100px;
-    margin:0 auto;
-    padding:0 4%;
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
 /*大きな画像*/
-.big-bg{
-    background-size:cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
-#home{
-    background-image:url(blur_edges\ \(1\).jpg);
-    min-height: 100vh;
-    background-color: rgba(149, 227, 233, 0.249);
-    background-blend-mode:color-dodge;
-    width:100%;
+#home {
+  background-color: grey;
+  min-height: 100vh;
+  background-blend-mode: multiply;
+  width: 100%;
 }
 
-#home .page-title{
-    text-transform: none;
+#home .page-title {
+  text-transform: none;
 }
 
 /*HOME
 -----------------*/
-.home-content{
-    text-align:center;
-    margin-top: 15%;
-    color:#003366;
-    min-height:400px;
-    font-size:2.0rem;
+.home-content {
+  margin-top: 15%;
+  min-height: 400px;
 }
-.home-content h2{
-    align-content: center;
-    font-weight: 300;
-}
+
 .home-content p {
-    font-size: 1.125rem;
-    margin:10px 0 42px;
-    color:#363d46;
-    filter: drop-shadow(10px 10px 5px #fff);
+  margin: 10px 0 42px;
 }
 
 /* headder-content
 -----------------*/
 
-.whats-new{
-    text-align: center;
-    font-size:2rem;
+.introduction-website {
+  margin: 0;
+  margin-top: 30px;
+}
+.introduction-website h3 {
+  color: #003366;
 }
 
-.border{
-    position:relative;
-    text-align: center;
-    font-size: 1px;
+.introduction-content {
+  margin: 30px;
 }
 
-.introduction-website{
-    text-align:center;
-    margin:0 auto;
-    margin-top:80px;
-    font-size: 1.125rem;
-    color:#363d46;
-    width:70%;
+.border {
+  /**各見出しのところ**/
+  display: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  margin-top: 30px;
+  border-bottom: 4px dotted #009bc6;
+  font-weight: bold;
 }
-.introduction-website h3{
-    font-size:2rem;
-    color:#003366;
-}
-.introduction-website p{
-    margin:0% 20%;
-    filter: drop-shadow(10px 10px 5px #717171);
-}
-
-
-#intro-content{
-    width:70%;
-    margin:100px auto;
-}
-.introduction-content{
-    margin:0 50px;
-    display:flex;
-    color:#363d46;
-    background-color:aliceblue;
-    background-clip:content-box;
-}
-.border{
-    display:center;
-    text-align: center;
-    font-size:2rem;
-    color:#003366;
-    margin-top:200px;
-    border-bottom:4px dotted #009bc6;
-    font-weight: 200;
-}
-
-  
-
-.introduction-content img{
-    flex-basis:50%;
-}
-.introduction-content p{
-    flex-basis:50%;
-    text-align: center;
-    align-content: center;
-    filter: drop-shadow(10px 10px 5px #717171);
-}
-
 
 /*article content1
 -----------------*/
 
-
-.article-intro{
-    color:#003366;
-    margin-top:200px;
-    text-align:center;
-    font-size:2rem;
-    font-weight: 500;
+.article-intro {
+  /**craftman storyの各ページ一覧のところの見出し**/
+  color: #003366;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  width: fit-content;
+  margin: 0;
 }
 
-.grid{
-    display:grid;
-    gap:26px;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    margin-top:6%;
-    margin-bottom:50px;
+.item h4 {
+  color: #363d46;
 }
 
-.item h4{
-    font-size:20px;
-    color:#363d46;
+.img-background {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
 }
 
-
-.img-background{
-    background-image: url(背景サンプル_w_trans\ \(1\).png);
-    background-repeat: no-repeat;
+/*what's new */
+.new-badge {
+  /**new! バッジ**/
+  color: white;
+  background-color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-/*article content2
+.what_new_box {
+  /**1つ1つの新着情報ボックス**/
+  margin-right: 30px;
+  margin-left: 30px;
+  border: solid 1px rgb(159, 159, 159);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+  background-color: rgb(248, 248, 248);
+  position: relative;
+  z-index: 0;
+  transition: all 0.6s;
+}
+
+.what_new_box_anim {
+  /*新着情報ボックスの伸びてくる部分*/
+  z-index: -100;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.6s;
+}
+
+.what_new_box_main {
+  z-index: 100;
+  transition: all 0.6s;
+}
+
+.observed {
+  /*伸びてくる仕掛け*/
+  border-radius: 0px 10px 10px 0px;
+  width: 100%;
+}
+
+.non_observed {
+  /*伸びてくる仕掛け*/
+  width: 0;
+}
+
+.observed2 {
+  /*伸びてくる仕掛け*/
+  color: white;
+}
+
+.non_observed2 {
+  /*伸びてくる仕掛け*/
+  color: black;
+}
+
+.observed3 {
+  /*少し↑にあがる仕掛け*/
+  transform: translateY(-5px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.what_new_box:hover {
+  /*hover時にも伸びてくる*/
+  transform: translateY(-5px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  .what_new_box_anim {
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+  }
+  .what_new_box_main {
+    color: white;
+  }
+}
+
+/** Craftman Storyの記事一覧のところ
+------**/
+/*枠線があらわれるanimation*/
+.liner {
+  width: fit-content;
+  padding: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/*枠線があらわれるanimation*/
+.liner1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  background-color: #003366;
+  transition: all 0.5s;
+}
+
+/*枠線があらわれるanimation*/
+.liner2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 2px;
+  background-color: #003366;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+}
+
+/*枠線があらわれるanimation*/
+.liner3 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 2px;
+  background-color: #003366;
+  transition: all 0.5s;
+  transition-delay: 1s;
+}
+
+/*枠線があらわれるanimation*/
+.liner4 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 2px;
+  background-color: #003366;
+  transition: all 0.5s;
+  transition-delay: 1.5s;
+}
+
+/*枠線があらわれるanimation*/
+.horizontal_observed {
+  width: 100%;
+}
+
+/*枠線があらわれるanimation*/
+.horizontal_non_observed {
+  width: 0;
+}
+
+/*枠線があらわれるanimation*/
+.vertical_observed {
+  height: 100%;
+}
+
+/*枠線があらわれるanimation*/
+.vertical_non_observed {
+  height: 0;
+}
+
+.cs_card {
+  /**記事1つ1つのボックス**/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 1px #363d46;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+  border-right: solid 10px red;
+  transition: all 0.6s;
+}
+
+.cs_card_main {
+  padding: 20px;
+  z-index: 100;
+  transition: all 0.6s;
+}
+
+.cs_card_anim {
+  /**右から伸びてくる仕掛け**/
+  position: absolute;
+  right: 0;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+  transition: all 0.6s;
+}
+
+.observed4 {
+  /**右から伸びてくる仕掛け**/
+  left: 0;
+}
+
+.cs_card:hover {
+  /**hover時も右から伸びてくる**/
+  transform: translateY(-5px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  .cs_card_anim {
+    left: 0;
+  }
+  .cs_card_main {
+    color: white;
+  }
+}
+
+/* Craftman Storyとは?
 -----------------*/
 
+.grid2_left {
+  /**大田区の町工場のところ**/
+  display: flex;
+  width: fit-content;
+  height: 60px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #ebc1c1;
+  border: #640a0a solid 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+  align-self: end;
+}
 
+.grid2_right {
+  /**東京理科大国際デザイン経営学科デジタル部のところ**/
+  display: flex;
+  width: fit-content;
+  height: 60px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: #bfdcef;
+  border: #008cff solid 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
 
-.card-container2{
-    display:flex;
-    padding:0;
-    list-style: none;
-    margin: 0 auto;
+/*grid */
+.grid3 {
+  /**2段組、スマホの時は1段になる**/
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
 }
-.card-container2 li{
-    display:flex;
-    width:100%;
-    background: #fff;
-}
-.card-text2{
-    width:100%;
-    margin: 10px 10px;
-}
-.card-text2 h3{
-    font-size: 24px;
-    align-content:center;
-}
-.card-img2{
-    width:50%
-}
-.card-img2 img{
-    width:100%;
-    height:100%;
-    vertical-align:bottom;
-}
-.card-container2 li a{
-    display:block;
-    width:100%;
-    box-sizing: border-box;
-    padding:10px
-}
-@media screen and (min-width:650px) {
-    .card-container2{
-        display: flex;
-        max-width: 1000px;
-        list-style:none;
-        height: 200px;
-        margin:0 auto;
-        margin-bottom: 100px;
-        border-style:double;
-        border-color:#fff;
-        background-color:#003366;
-    }
-    .card-img2{
-        display:flex
-    }
-    .card-text2{
-        display: flex;
-    }
-    .card-text2 h3{
-        font-size: 24px;
-        padding-left: 15px;
-        font-weight: 200;
-    }
-    .card-text2 h6{
-        font-size: 10px;
-        padding-left: 16px;
-    }
+
+.grid2 {
+  /**大田区の町工場x東京理科大国際デザイン経営学科デジタル部のところ**/
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 3fr;
 }
 
 /*フッター
 -----------------*/
 
-footer{
-    background:#003366;
-    text-align:center;
-    padding:26px 0;
-    margin-top:50px;
+footer {
+  background: #003366;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  padding-top: 30px;
 }
 
-footer p{
-    color:#fff;
-    font-size:0.875rem;
+.footer_link {
+  text-decoration: none;
+  color: rgb(185, 184, 197);
 }
 
-/*animation*/
-.line{
-    position: relative; /* 枠線が書かれる基点*/
-  }
-  
-  /*上下線*/
-  .line::before,
-  .line::after{
-    position: absolute;
-    content:"";
-    width:0;
-    height:1px;
-    background:#003366;/* 枠線の色*/
-  }
-  
-  /*左右線*/
-  .line2::before,
-  .line2::after{
-    position: absolute;
-    content:"";
-    width: 1px;
-    height:0;
-    background:#003366;/* 枠線の色*/
-  }
-  
-  /*上線*/
-  .line::before {
-    top:0;
-    left:0;
-    animation: lineAnime .5s linear 0s forwards;/*表示されて0秒後に上線が0.5秒かけて表示*/
-  }
-  
-  /*右線*/
-  .line2::before{ 
-    top:0;
-    right:0;
-    animation: lineAnime2 .5s linear .5s forwards;/*表示されて0.5秒後に右線が0.5秒かけて表示*/
-  }
-  
-  /*下線*/
-  .line::after { 
-    bottom:0;
-    right:0;
-    animation: lineAnime .5s linear 1s forwards;/*表示されて1秒後に下線が0.5秒かけて表示*/
-  }
-  
-  /*左線*/
-  .line2::after{ 
-    bottom:0;
-    left:0;
-    animation: lineAnime2 .5s linear 1.5s forwards;/*表示されて1.5秒後に左線が0.5秒かけて表示*/
-  }
-  
-  @keyframes lineAnime {
-    0% {width:0%;}
-      100%{width:100%;}
-  }
-  
-  @keyframes lineAnime2 {
-    0% {height:0%;}
-      100%{height:100%;}
-  }
-  
-  /*枠線内側の要素*/
-  .line .lineinappear{
-    animation: lineInnerAnime .5s linear 1.5s forwards;/*1.5秒後に中央のエリアが0.5秒かけて表示*/
-    opacity: 0;/*初期値を透過0にする*/ 
-  }
-  
-  @keyframes lineInnerAnime{
-    0% {opacity:0;}
-      100% {opacity:1;}
-  }
-  
-  
-  /*========= レイアウトのためのCSS ===============*/
-  
-  .line{
-    box-sizing:border-box;
-    margin:0 35%;
+.special_thanks {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: white;
+  border: solid 1px #0c0c0c;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+@media (max-width: 450px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}

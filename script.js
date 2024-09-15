@@ -48,6 +48,14 @@ function observed2(x) {
     "vertical_non_observed"
   );
   x.getElementsByClassName("liner4")[0].classList.add("vertical_observed");
+  x.getElementsByClassName("liner5")[0].classList.remove(
+    "horizontal_non_observed"
+  );
+  x.getElementsByClassName("liner5")[0].classList.add("horizontal_observed");
+  x.getElementsByClassName("liner6")[0].classList.remove(
+    "horizontal_non_observed"
+  );
+  x.getElementsByClassName("liner6")[0].classList.add("horizontal_observed");
 }
 
 /** 記事一覧の右から伸びてくるやつのための関数 */

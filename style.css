@@ -17,6 +17,10 @@ body {
 
 /*HEADER
 -----------------*/
+.header {
+  display: grid;
+}
+
 .header-title {
   /**nav verの左上 Craftman Story**/
   font-weight: bold;
@@ -69,9 +73,21 @@ body {
   margin-top: 30px;
   list-style: none;
   font-weight: bold;
+  margin-left: 10%;
+  margin-top: 30px;
+  padding-left: 0;
 }
 .lang {
   border-bottom: 1.5px solid;
+}
+
+.lanlang:hover {
+  .lang {
+    border-bottom: none;
+  }
+  .un-lang {
+    border-bottom: 1.5px solid;
+  }
 }
 
 .main-nav li {
@@ -81,16 +97,97 @@ body {
   color: #363d46;
 }
 
-.page-header {
+.headline {
+  white-space: nowrap;
+  height: 15vh;
+  justify-self: start;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 4%;
+.headaaa {
+  padding: 10px;
+  width: calc(100% - 20px);
+  height: 15vh;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 10px;
 }
+
+.headbbb {
+  justify-self: start;
+  display: flex;
+  gap: 10px;
+}
+
+.logologo {
+  max-height: 15vh;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  height: 15vh;
+  justify-self: end;
+  justify-content: end;
+  align-items: center;
+}
+
+/**下向き矢印のやつ**/
+.scroll_down {
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  animation-name: moving-up-down;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.scroll_down_arrow {
+  rotate: -45deg;
+  aspect-ratio: 1/1;
+  border-bottom: solid 3px white;
+  border-left: solid 3px white;
+  width: 5%;
+  margin: 0 auto;
+}
+
+.scroll_down_msg {
+  color: white;
+  font-weight: bold;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.scroll_down_anim {
+  animation-name: titleAnime;
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 1.5s;
+  animation-direction: normal;
+}
+
+@keyframes moving-up-down {
+  0% {
+    transform: translateY(30px);
+    transition: all 0.5s;
+  }
+  100% {
+    transform: translateY(-30px);
+    transition: all 0.5s;
+  }
+}
+
 /*大きな画像*/
 .big-bg {
   background-size: cover;
@@ -102,6 +199,7 @@ body {
   min-height: 100vh;
   background-blend-mode: multiply;
   width: 100%;
+  position: relative;
 }
 
 #home .page-title {
@@ -155,7 +253,7 @@ body {
   font-size: 2rem;
   text-align: center;
   width: fit-content;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .item h4 {
@@ -253,20 +351,21 @@ body {
 ------**/
 /*枠線があらわれるanimation*/
 .liner {
-  width: fit-content;
-  padding: 10px;
+  display: flex;
   position: relative;
-  margin: 0 auto;
+  margin-top: 30px;
 }
 
 /*枠線があらわれるanimation*/
 .liner1 {
   position: absolute;
   top: 0px;
-  left: 0px;
+  right: 0px;
   height: 2px;
   background-color: #003366;
   transition: all 0.5s;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
 }
 
 /*枠線があらわれるanimation*/
@@ -277,18 +376,19 @@ body {
   width: 2px;
   background-color: #003366;
   transition: all 0.5s;
-  transition-delay: 0.5s;
+  transition-delay: 1s;
 }
 
 /*枠線があらわれるanimation*/
 .liner3 {
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  left: 0px;
   height: 2px;
   background-color: #003366;
   transition: all 0.5s;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
+  transition-timing-function: linear;
 }
 
 /*枠線があらわれるanimation*/
@@ -299,7 +399,27 @@ body {
   width: 2px;
   background-color: #003366;
   transition: all 0.5s;
-  transition-delay: 1.5s;
+  transition-delay: 1s;
+}
+
+.liner5 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 2px;
+  background-color: #003366;
+  transition: all 0.5s;
+  transition-timing-function: linear;
+}
+
+.liner6 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 2px;
+  background-color: #003366;
+  transition: all 0.5s;
+  transition-timing-function: linear;
 }
 
 /*枠線があらわれるanimation*/
@@ -337,6 +457,16 @@ body {
   padding: 20px;
   z-index: 100;
   transition: all 0.6s;
+}
+
+.cs_card_back {
+  background-color: rgb(244, 244, 244);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -200;
 }
 
 .cs_card_anim {
@@ -444,6 +574,12 @@ footer {
 
 /*========= レイアウトのためのCSS ===============*/
 
+@media (max-width: 1025px) {
+  .scroll_down_arrow {
+    width: 20%;
+  }
+}
+
 @media (max-width: 450px) {
   .grid3 {
     grid-template-columns: 1fr;
@@ -452,5 +588,33 @@ footer {
 
   .grid2 {
     grid-template-columns: 1fr;
+  }
+
+  .scroll_down_msg {
+    margin-top: 30px;
+  }
+
+  .headline {
+    margin-left: 0;
+  }
+
+  .headaaa {
+    grid-template-columns: 1fr;
+  }
+
+  .headbbb {
+    gap: 0;
+  }
+
+  .logos {
+    height: 5vh;
+  }
+
+  .logologo {
+    display: none;
+  }
+
+  .title2 {
+    font-size: 1.8em;
   }
 }

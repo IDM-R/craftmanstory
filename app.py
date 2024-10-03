@@ -13,7 +13,7 @@ def index():
 # 英語版
 @app.route("/en",methods = ["GET"])
 def index_en():
-    return render_template("en_index.html")
+    return render_template("index_en.html")
 
 #「/vol/<num>」へアクセスがあった場合に、「article<vol>.html」を返す
 @app.route("/vol/<num>",methods = ["GET"])

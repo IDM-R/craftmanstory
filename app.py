@@ -11,12 +11,12 @@ def index():
     return render_template("index.html")
 
 # 英語版
-@app.route("/en",methods = ["GET"])
+@app.route("/en/",methods = ["GET"])
 def index_en():
     return render_template("index_en.html")
 
 #「/vol/<num>」へアクセスがあった場合に、「article<vol>.html」を返す
-@app.route("/vol/<num>",methods = ["GET"])
+@app.route("/vol/<num>/",methods = ["GET"])
 def vol0(num):
     for i in range(0,len(vol_list)):
         if vol_list[i] == num:
@@ -29,7 +29,7 @@ def vol0(num):
     return render_template("article"+num+".html")
 
 #「/vol/<num>/en」へアクセスがあった場合に、「article<vol>_en.html」を返す。英語版
-@app.route("/vol/<num>/en",methods = ["GET"])
+@app.route("/vol/<num>/en/",methods = ["GET"])
 def vol_en(num):
     for i in range(0,len(en_list)):
         if en_list[i] == num:

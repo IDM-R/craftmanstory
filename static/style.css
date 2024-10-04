@@ -128,6 +128,8 @@ body {
 
 .logologo {
   max-height: 13vh;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logos {
@@ -649,6 +651,10 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .scroll_down_arrow {
+    width: 15%;
+  }
+
   .grid3 {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -656,6 +662,10 @@ footer {
 
   .grid2 {
     grid-template-columns: 1fr;
+  }
+
+  .scroll_down {
+    bottom: 5%;
   }
 
   .scroll_down_msg {

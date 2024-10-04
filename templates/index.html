@@ -55,7 +55,7 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
       <div class="cs_card">
         <img
           src="{{ url_for('static', filename='Vol0_title_image.jpeg') }}"
-          width="100%"
+          style="min-height: 100%; max-width: 100%; object-fit: cover"
           alt=""
         />
         <div style="position: relative">

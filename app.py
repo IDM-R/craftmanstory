@@ -44,7 +44,8 @@ def vol_en(num):
 
 @app.errorhandler(404) # 404エラーが発生した場合の処理
 def error_404(error):
-    return render_template('404.html')
+    nf404 = True
+    return render_template('404.html',nf404 = nf404)
 
 if __name__ == "__main__":
     app.debug = False

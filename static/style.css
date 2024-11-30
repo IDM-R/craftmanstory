@@ -129,7 +129,7 @@ body {
 .logologo {
   max-height: 13vh;
   margin: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .logos {

@@ -128,7 +128,8 @@ body {
 
 .logologo {
   max-height: 13vh;
-  margin: 0 auto;
+  margin: auto;
+  width: 100%;
 }
 
 .logos {

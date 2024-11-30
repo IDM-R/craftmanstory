@@ -78,7 +78,7 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
       <div class="grid2" style="justify-items: center">
         <div class="grid2_left">
           <img
-            src="https://pbs.twimg.com/profile_images/1311112124618272768/3U-9XNKv_400x400.jpg"
+            src="{{ url_for('static', filename='pio_ota_logo2.webp')}}"
             style="height: 60px; padding-right: 10px"
           />
           <p style="margin: 0; font-weight: bold; color: #640a0a">
@@ -174,7 +174,7 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
     >
       <div class="special_thanks">
         <img
-          src="https://pbs.twimg.com/profile_images/1311112124618272768/3U-9XNKv_400x400.jpg"
+          src="{{ url_for('static', filename='pio_ota_logo2.webp')}}"
           width="100%"
           style="border-radius: 10px"
         />
@@ -194,8 +194,8 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
       <div class="special_thanks">
         <img src="https://kinami-mori-koyama.com/digital2.webp" width="100%" />
         <div style="padding: 5px; padding-top: 10px">
-          <h4 style="margin: 0">
-            <u>東京理科大国際デザイン経営学科デジタル部</u>
+          <h4 style="margin: 0; word-break: keep-all">
+            <u>東京理科大学 経営学部 国際デザイン経営学科 デジタル部</u>
           </h4>
           <p style="margin: 0">
             当プロジェクトと同様IDMのサークルです。プログラミングやデジタルに関する論文の読書会を行っています。当サイト運営にあたっては、サーバーのリソースの提供、記事制作の支援をしています。

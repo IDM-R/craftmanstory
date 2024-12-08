@@ -8,12 +8,12 @@ en_list = ["0"]
 # トップページ
 @app.route("/",methods = ["GET"])
 def index():
-    return render_template("index.html")
+    return render_template("index.html",index = True)
 
 # 英語版
 @app.route("/en/",methods = ["GET"])
 def index_en():
-    return render_template("index_en.html")
+    return render_template("index_en.html",index = True)
 
 #「/vol/<num>」へアクセスがあった場合に、「article<vol>.html」を返す
 @app.route("/vol/<num>/",methods = ["GET"])

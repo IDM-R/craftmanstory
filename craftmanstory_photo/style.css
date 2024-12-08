@@ -661,11 +661,51 @@ footer {
   margin: 0;
 }
 
+/**メンバー紹介のところのcss**/
+.box-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3% 10%;
+}
+.box {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 3fr 7fr;
+  margin: 3%;
+  border: outset #8ec6ff 4px;
+  gap: 10px;
+  padding-right: 5px;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
+  background-color: white;
+}
+.box-img {
+  display: flex;
+  margin-left: 0;
+}
+.box-text {
+  color: rgba(0, 0, 0, 0.749);
+  height: 100%;
+}
+.box-text h2 {
+  border-bottom: solid #8ec6ff;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/**おわり**/
+
 /*========= レイアウトのためのCSS ===============*/
 
 @media (max-width: 1025px) {
   .scroll_down_arrow {
     width: 20%;
+  }
+
+  .box-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
   }
 
   .grid4 {
@@ -681,6 +721,10 @@ footer {
 @media (max-width: 450px) {
   .scroll_down_arrow {
     width: 15%;
+  }
+
+  .box-area {
+    grid-template-columns: 1fr;
   }
 
   .grid4 {

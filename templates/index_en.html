@@ -25,6 +25,24 @@ endblock %} {% block home_content %}
         </div>
       </a>
     </div>
+    <div>
+      <a href="/vol/1/en" style="text-decoration: none">
+        <div class="what_new_box" style="border-left: solid 10px #45b76f">
+          <div
+            class="what_new_box_anim non_observed"
+            style="background-color: #45b76f"
+          ></div>
+          <div class="what_new_box_main non_observed2">
+            <p style="margin: 10px; margin-bottom: 5px">
+              <span class="new-badge">New!</span>12-09-2024
+            </p>
+            <h3 style="margin: 10px; margin-top: 0">
+              The article of Iwai Factory has been published!!!
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -54,7 +72,7 @@ endblock %} {% block home_content %}
     <a href="/vol/0/en" style="text-decoration: none; color: black">
       <div class="cs_card">
         <img
-          src="{{ url_for('static', filename='Vol0_title_image.jpeg') }}"
+          src="{{ url_for('static', filename='Vol0_title_image.webp') }}"
           style="min-height: 100%; max-width: 100%; object-fit: cover"
           alt=""
         />
@@ -65,6 +83,23 @@ endblock %} {% block home_content %}
             <p style="margin: 0; text-align: right">09-11-2024</p>
             <h3 class="cs_border" style="margin: 0"><u> Vol.0</u></h3>
             <p><u>Craftman Story club starts!!!</u></p>
+          </div>
+        </div>
+      </div></a
+    ><a href="/vol/1/en" style="text-decoration: none; color: black">
+      <div class="cs_card" style="border-right: solid 10px #4f96f6">
+        <img
+          src="{{ url_for('static', filename='01iwai_thumbnail.webp') }}"
+          style="min-height: 100%; max-width: 100%; object-fit: cover"
+          alt="Mr. and Ms. Iwai"
+        />
+        <div style="position: relative">
+          <div class="cs_card_anim" style="background-color: #4f96f6"></div>
+          <div class="cs_card_main non_observed2">
+            <div class="cs_card_back"></div>
+            <p style="margin: 0; text-align: right">2024-12-08</p>
+            <h3 class="cs_border" style="margin: 0"><u> Vol.1</u></h3>
+            <p><u>Iwai Factory</u></p>
           </div>
         </div>
       </div></a
@@ -144,8 +179,8 @@ endblock %} {% block home_content %}
     <h3 class="border">What is a town factories in Ota Ward?</h3>
     <div class="introduction-content grid3">
       <img
-        src="{{ url_for('static', filename='iwai_01.jpg') }}"
-        alt="大田区町工場の画像"
+        src="{{ url_for('static', filename='01iwai_06.webp') }}"
+        alt=""
         width="100%"
       />
       <div>
@@ -172,7 +207,7 @@ endblock %} {% block home_content %}
             >their high technology, despite their small scale</span
           >.
         </p>
-        <p>　picture: Piece of metal scraped off at Iwai factory</p>
+        <p>　picture: Lathe machining at Iwai factory</p>
       </div>
     </div>
   </div>

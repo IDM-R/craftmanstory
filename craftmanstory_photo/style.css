@@ -682,12 +682,24 @@ footer {
 .box-img {
   display: flex;
   margin-left: 0;
+  background-color: aliceblue;
+}
+.box-img2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.writer-box {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 .box-text {
   color: rgba(0, 0, 0, 0.749);
   height: 100%;
 }
-.box-text h2 {
+.box-text h3 {
   border-bottom: solid #8ec6ff;
   display: inline-block;
   margin-bottom: 5px;

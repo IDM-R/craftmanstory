@@ -456,7 +456,6 @@ body {
   border: solid 1px #363d46;
   border-radius: 0 10px 10px 0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
-  border-right: solid 10px red;
   transition: all 0.6s;
 }
 

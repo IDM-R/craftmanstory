@@ -2,7 +2,7 @@ from flask import Flask,render_template
 
 app = Flask(__name__, static_url_path="/")
 
-vol_list = ["0"]
+vol_list = ["0","1"]
 en_list = ["0"]
 
 # トップページ
@@ -36,7 +36,8 @@ def vol_en(num):
             break
         else:
             if i == len(en_list)-1:
-                return render_template("404.html"),404
+                nf404 = True
+                return render_template("404.html",nf404 = nf404),404
             else:
                 break
     return render_template("article"+num+"_en.html")

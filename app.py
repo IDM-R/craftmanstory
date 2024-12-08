@@ -3,7 +3,7 @@ from flask import Flask,render_template
 app = Flask(__name__, static_url_path="/")
 
 vol_list = ["0","1"]
-en_list = ["0"]
+en_list = ["0","1"]
 
 # トップページ
 @app.route("/",methods = ["GET"])

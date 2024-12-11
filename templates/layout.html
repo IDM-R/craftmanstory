@@ -15,6 +15,9 @@
     {% if index == True %}
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     {% endif %}
+    {% if article == True %}
+    <script src="{{ url_for('static', filename='member_intro_script.js') }}" defer></script>
+    {% endif %}
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}" />
   </head>
   <body>

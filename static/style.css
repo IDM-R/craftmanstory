@@ -665,6 +665,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 3% 10%;
+  gap: 10px;
 }
 .box {
   display: grid;
@@ -672,12 +673,41 @@ footer {
   grid-template-columns: 3fr 7fr;
   margin: 3%;
   border: outset #8ec6ff 4px;
-  gap: 10px;
   padding-right: 5px;
   align-items: center;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
   background-color: white;
+  transition: all 0.4s;
+  z-index: 10;
+  gap: 10px;
 }
+.box-sentence {
+  background-color: #88add2;
+  border-radius: 10px;
+  color: white;
+  z-index: 100;
+  position: relative;
+  margin: 3%;
+  top: 20px;
+  padding: 10px;
+}
+/** 記事の一番下のメンバー紹介のところ **/
+.box-parent:hover {
+  .box {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+  .box-sentence {
+    display: block;
+  }
+}
+.observed5 {
+  display: block;
+}
+.non_observed5 {
+  display: none;
+}
+
 .box-img {
   display: flex;
   margin-left: 0;

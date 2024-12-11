@@ -630,6 +630,12 @@ footer {
   margin: 15% 20%;
   margin-top: 30px;
 }
+.article-layout {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 3fr 7fr;
+}
 .writer {
   color: #003366;
   border-bottom: double;

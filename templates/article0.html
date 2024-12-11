@@ -23,42 +23,98 @@ filename='Vol0_title_image.webp') }}{% endblock %} {% block home_content %}
 </div>
 <div class="img-background">
   <h3 class="border">メンバー紹介</h3>
-  <div class="article-writer">
+  <div class="article-writer" style="margin-bottom: 30px">
     <span class="writer1"><span class="group-writer"> ライター班</span></span>
-
-    <p class="writer-name">小松 すず(こまつ すず)</p>
-    <p>
-      　『伝わりやすい文章』をモットーに記事執筆などをやっていこうと思っています。記事制作の経験はありませんが、書くことは大好きです。素人なりに一生懸命頑張ります。よろしくお願いします！
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='ko_img.webp') }}"
+        alt="個人の画像"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">小松 すず(こまつ すず)</p>
+        <p>
+          　『伝わりやすい文章』をモットーに記事執筆などをやっていこうと思っています。記事制作の経験はありませんが、書くことは大好きです。素人なりに一生懸命頑張ります。よろしくお願いします！
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='no_img.webp') }}"
+        alt="個人の画像"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">野口 遼介(のぐち りょうすけ）</p>
+        <p>　東京理科大学 国際デザイン経営学科の2年生です。</p>
+        <p>
+          　ライターのお仕事に興味があり、このプロジェクトに参加しました。大好きな東京の下町情緒を、町工場の取材という形で皆さんにお伝えできたらいいなと思っています！
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='yo_img.webp') }}"
+        alt="個人の画像"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">吉永 彩乃(よしなが あやの)</p>
+        <p>
+          　職人さんに直接お話を伺い、その声を文章として形にするライターの仕事に強く興味を持ち、参加させていただきました。職人さんたちの技術や想いには深い魅力があり、それをより多くの方々に届けたいです！
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="img-background">
+  <div class="article-writer">
+    <p style="margin-top: 30px">
+      <span class="writer1"><span class="group-writer"> web班</span></span>
     </p>
-
-    <p class="writer-name">野口 遼介（のぐち りょうすけ）</p>
-    <p>　東京理科大学 国際デザイン経営学科の2年生です。</p>
-    <p>
-      　ライターのお仕事に興味があり、このプロジェクトに参加しました。大好きな東京の下町情緒を、町工場の取材という形で皆さんにお伝えできたらいいなと思っています！
-    </p>
-    <p class="writer-name">吉永 彩乃（よしなが あやの)</p>
-    <p>
-      　職人さんに直接お話を伺い、その声を文章として形にするライターの仕事に強く興味を持ち、参加させていただきました。職人さんたちの技術や想いには深い魅力があり、それをより多くの方々に届けたいです！
-    </p>
-
-    <span class="writer1"><span class="group-writer"> web班</span></span>
-
-    <p class="writer-name">徳丸 さくら(とくまる さくら)</p>
-    <p>　私は主にweb制作を行っています。web制作はこのサイト初めてです。</p>
-    <p>
-      　まだまだ未熟者ではありますが、大田区のものづくり職人の方々の魅力を皆様にお伝えできるように日々学んでいきたいと思います。
-      大田区ものづくり職人の方々の物語と共に、webサイトの成長にもご期待ください。
-    </p>
-    <p class="writer-name">三好 琉希(みよし りゅうき)</p>
-    <p>　私はweb制作を担当しています。</p>
-    <p>
-      　IT技術を含めテクノロジーに興味があり、科学技術の原点であり現在も最先端で活用されている『職人技術の魅力』について広めたいと考え、プロジェクトに参加しました。
-    </p>
-    <p class="writer-name">木南 知也(きなみ ともや)</p>
-    <p>　私はweb制作を担当しています。</p>
-    <p>
-      　web制作も工場見学も大好きです。大田区の町工場の職人さんの仕事と魅力を、このwebサイトでお伝えできるように頑張ります!
-    </p>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='to_img.webp') }}"
+        alt="個人の画像"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">徳丸 さくら(とくまる さくら)</p>
+        <p>　私は主にweb制作を行っています。web制作はこのサイト初めてです。</p>
+        <p>
+          　まだまだ未熟者ではありますが、大田区のものづくり職人の方々の魅力を皆様にお伝えできるように日々学んでいきたいと思います。
+          大田区ものづくり職人の方々の物語と共に、webサイトの成長にもご期待ください。
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='mi_img.webp') }}"
+        alt="個人の画像"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">三好 琉希(みよし りゅうき)</p>
+        <p>　私はweb制作を担当しています。</p>
+        <p>
+          　IT技術を含めテクノロジーに興味があり、科学技術の原点であり現在も最先端で活用されている『職人技術の魅力』について広めたいと考え、プロジェクトに参加しました。
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='ki_img.webp') }}"
+        alt="個人の画像"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">木南 知也(きなみ ともや)</p>
+        <p>　私はweb制作を担当しています。</p>
+        <p>
+          　web制作も工場見学も大好きです。大田区の町工場の職人さんの仕事と魅力を、このwebサイトでお伝えできるように頑張ります!
+        </p>
+      </div>
+    </div>
     <p style="padding-top: 30px; border-top: dashed 4px grey">
       　<b>記事執筆は主に上記のライター班</b>のメンバーが行い、<b>webデザイン・技術面はWeb班</b>が行う予定です。ライター志望の学生が増えると同時にこの項目も増えます。随時更新です。
       他に<b>動画班のメンバー</b>も所属しており、彼らについてはまたの機会に紹介します。

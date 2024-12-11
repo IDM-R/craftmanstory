@@ -13,7 +13,9 @@
       rel="stylesheet"
       type="text/css"
     />
+    {% if index == True %}
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    {% endif %}
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}" />
   </head>
   <body>

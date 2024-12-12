@@ -13,7 +13,14 @@
       rel="stylesheet"
       type="text/css"
     />
+    {% if index == True %}
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    {% endif %} {% if article == True %}
+    <script
+      src="{{ url_for('static', filename='member_intro_script.js') }}"
+      defer
+    ></script>
+    {% endif %}
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico')}}" />
   </head>
   <body>
@@ -160,6 +167,9 @@
           <p><u>Craftman Story</u></p>
           <a href="/vol/0/en" class="footer_link">
             <p style="margin: 10px">Vol.0 -Craftman Story club starts!!!</p></a
+          >
+          <a href="/vol/1/en" class="footer_link">
+            <p style="margin: 10px">Vol.1 -Iwai Factory</p></a
           >
         </div>
       </div>

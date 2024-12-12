@@ -1,6 +1,6 @@
 {% extends "layout_en.html" %} {% block title %}Craftman Story Vol.0 -Craftman
 Story Club starts!!!{% endblock %} {% block home_photo %}{{ url_for('static',
-filename='Vol0_title_image.jpeg') }}{% endblock %} {% block home_content %}
+filename='Vol0_title_image.webp') }}{% endblock %} {% block home_content %}
 <h1 class="page-title1"><u>Vol.0</u></h1>
 <h1 class="page-title2">Craftman Story club starts!!!</h1>
 {% endblock %}{% block main_content %}
@@ -29,48 +29,119 @@ filename='Vol0_title_image.jpeg') }}{% endblock %} {% block home_content %}
 </div>
 <div class="img-background">
   <h3 class="border">Member Introduction</h3>
-  <div class="article-writer">
+  <div class="article-writer" style="margin-bottom: 30px">
     <span class="writer1"><span class="group-writer"> Writers Team</span></span>
-
-    <p class="writer-name">Suzu Komatsu</p>
-    <p>
-      　I will write articles with the motto of “easy-to-understand writing". I
-      have no experience in article production, but I love to write. I will do
-      my best in my own amateur way. Please look forward to it!
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='ko_img.webp') }}"
+        alt="profile-photo"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">Suzu Komatsu</p>
+        <p>
+          　I will write articles with the motto of “easy-to-understand
+          writing". I have no experience in article production, but I love to
+          write. I will do my best in my own amateur way. Please look forward to
+          it!
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='no_img.webp') }}"
+        alt="profile-photo"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">Ryosuke Noguchi</p>
+        <p>
+          　I am a second-year student at the Tokyo University of Science,
+          Department of International Design and Management.
+        </p>
+        <p>
+          　I am interested in working as a writer and joined this project. I
+          hope to convey to you the emotion of my favorite downtown area of
+          Tokyo in the form of reporting of a town factory!
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='yo_img.webp') }}"
+        alt="profile-photo"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">Ayano Yoshinaga</p>
+        <p>
+          　I am very interested in the work of a writer who directly interviews
+          craftsmen and shapes their voices into written form,so I decided to
+          participate. The skills and thoughts of the craftsmen are deeply
+          fascinating, and I want to deliver them to a wider audience!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="img-background">
+  <div class="article-writer">
+    <p style="margin-top: 30px">
+      <span class="writer1"><span class="group-writer"> Web Team</span></span>
     </p>
-
-    <p class="writer-name">Ryosuke Noguchi</p>
-    <p>
-      　I am a second-year student at the Tokyo University of Science,
-      Department of International Design and Management.
-    </p>
-    <p>
-      　I am interested in working as a writer and joined this project. I hope
-      to convey to you the emotion of my favorite downtown area of Tokyo in the
-      form of reporting of a town factory!
-    </p>
-
-    <span class="writer1"><span class="group-writer"> web班</span></span>
-
-    <p class="writer-name">Sakura Tokumaru</p>
-    <p>
-      　I mainly do web production. This is my first web production for this
-      site.
-    </p>
-    <p>
-      　Although I am still a novice, I would like to learn every day so that I
-      can share with you the charm of the craftsmen of Ota Ward. Please look
-      forward to the growth of the website as well as the stories of Ota Ward
-      craftsmen.
-    </p>
-    <p class="writer-name">Ryuki Miyoshi</p>
-    <p>　I am responsible for web production.</p>
-    <p>
-      　With an interest in technology, including IT, I joined the project with
-      the aim of spreading awareness about the "appeal of craftsmanship," which
-      is both the origin of scientific technology and is utilized at the cutting
-      edge today.
-    </p>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='to_img.webp') }}"
+        alt="profile-photo"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">Sakura Tokumaru</p>
+        <p>
+          　I mainly do web production. This is my first web production for this
+          site.
+        </p>
+        <p>
+          　Although I am still a novice, I would like to learn every day so
+          that I can share with you the charm of the craftsmen of Ota Ward.
+          Please look forward to the growth of the website as well as the
+          stories of Ota Ward craftsmen.
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='mi_img.webp') }}"
+        alt="profile-photo"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">Ryuki Miyoshi</p>
+        <p>　I am responsible for web production.</p>
+        <p>
+          　With an interest in technology, including IT, I joined the project
+          with the aim of spreading awareness about the "appeal of
+          craftsmanship," which is both the origin of scientific technology and
+          is utilized at the cutting edge today.
+        </p>
+      </div>
+    </div>
+    <div class="article-layout">
+      <img
+        src="{{ url_for('static', filename='ki_img.webp') }}"
+        alt="個人の画像"
+        width="100%"
+      />
+      <div>
+        <p class="writer-name">Tomoya Kinami</p>
+        <p>　I am responsible for web production.</p>
+        <p>
+          　I love web creating and factory tour. I'll do my best to deliver the
+          fascinating craftmen's jobs in town factories in Ota Ward through this
+          website!
+        </p>
+      </div>
+    </div>
     <p style="padding-top: 30px; border-top: dashed 4px grey">
       　<b>Articles </b>will be written
       <b>mainly by members of the above-mentioned writer team</b>, while
@@ -88,4 +159,5 @@ filename='Vol0_title_image.jpeg') }}{% endblock %} {% block home_content %}
     </p>
   </div>
 </div>
+
 {% endblock %}

@@ -1,6 +1,6 @@
 {% extends "layout.html" %} {% block title %} Craftman Story {% endblock %} {%
-block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
-%} {% block home_content %}
+block home_photo %}{{ url_for('static', filename='home_photo.webp') }}{%
+endblock %} {% block home_content %}
 <h1 class="page-title1">今日も大田区の町工場は、</h1>
 <h1 class="page-title2">物語で溢れている</h1>
 {% endblock %}{% block main_content %}
@@ -15,11 +15,27 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
             style="background-color: #4f96f6"
           ></div>
           <div class="what_new_box_main non_observed2">
-            <p style="margin: 10px; margin-bottom: 5px">
-              <span class="new-badge">New!</span>2024-09-11
-            </p>
+            <p style="margin: 10px; margin-bottom: 5px">2024-09-11</p>
             <h3 style="margin: 10px; margin-top: 0">
               Craftman Story部 始動しました!!!
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="/vol/1" style="text-decoration: none">
+        <div class="what_new_box" style="border-left: solid 10px #45b76f">
+          <div
+            class="what_new_box_anim non_observed"
+            style="background-color: #45b76f"
+          ></div>
+          <div class="what_new_box_main non_observed2">
+            <p style="margin: 10px; margin-bottom: 5px">
+              <span class="new-badge">New!</span>2024-12-11
+            </p>
+            <h3 style="margin: 10px; margin-top: 0">
+              岩井製作所の記事を公開しました!!!
             </h3>
           </div>
         </div>
@@ -52,11 +68,11 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
   </p>
   <div class="grid3" style="margin-top: 30px">
     <a href="/vol/0" style="text-decoration: none; color: black">
-      <div class="cs_card">
+      <div class="cs_card" style="border-right: solid 10px red">
         <img
-          src="{{ url_for('static', filename='Vol0_title_image.jpeg') }}"
+          src="{{ url_for('static', filename='Vol0_title_image.webp') }}"
           style="min-height: 100%; max-width: 100%; object-fit: cover"
-          alt=""
+          alt="ペンと紙"
         />
         <div style="position: relative">
           <div class="cs_card_anim" style="background-color: red"></div>
@@ -65,6 +81,23 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
             <p style="margin: 0; text-align: right">2024-09-11</p>
             <h3 class="cs_border" style="margin: 0"><u> Vol.0</u></h3>
             <p><u>Craftman Story部始動!!!</u></p>
+          </div>
+        </div>
+      </div></a
+    ><a href="/vol/1" style="text-decoration: none; color: black">
+      <div class="cs_card" style="border-right: solid 10px #4f96f6">
+        <img
+          src="{{ url_for('static', filename='01iwai_01.webp') }}"
+          style="min-height: 100%; max-width: 100%; object-fit: cover"
+          alt="岩井さんご夫婦"
+        />
+        <div style="position: relative">
+          <div class="cs_card_anim" style="background-color: #4f96f6"></div>
+          <div class="cs_card_main non_observed2">
+            <div class="cs_card_back"></div>
+            <p style="margin: 0; text-align: right">2024-12-11</p>
+            <h3 class="cs_border" style="margin: 0"><u> Vol.1</u></h3>
+            <p><u>岩井製作所</u></p>
           </div>
         </div>
       </div></a
@@ -134,8 +167,8 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
     <h3 class="border">大田区町工場 とは?</h3>
     <div class="introduction-content grid3">
       <img
-        src="{{ url_for('static', filename='iwai_01.jpg') }}"
-        alt="大田区町工場の画像"
+        src="{{ url_for('static', filename='01iwai_06.webp') }}"
+        alt="岩井製作所の旋盤加工の様子"
         width="100%"
       />
       <div>
@@ -157,7 +190,7 @@ block home_photo %}{{ url_for('static', filename='home_photo.jpg') }}{% endblock
             >規模が小さいながらもその高い技術</span
           >で私たちの暮らしを支えている、町工場・職人さんが多くいらっしゃいます。
         </p>
-        <p>　写真: 岩井製作所で削りとられた金属の破片</p>
+        <p>　写真: 岩井製作所の旋盤加工の様子</p>
       </div>
     </div>
   </div>

@@ -1,0 +1,398 @@
+{% extends "layout.html" %} {% block title %} Craftman Story Vol.3 -玉川パイプ
+{% endblock %} {% block home_photo %}{{ url_for('static',
+filename='03tamagawa_01.webp') }}{% endblock %} {% block home_content %}
+<h1 class="page-title1"><u>Vol.3</u></h1>
+<h1 class="page-title2">玉川パイプ</h1>
+{% endblock %}{% block main_content %}
+<div class="article-title">
+  <div class="title-page"><h2 class="title"></h2></div>
+  <p class="article-date">取材日 2024.11.13</p>
+  <p class="article-date">最終更新日 2025.1.??</p>
+  <p class="title-content">　こんにちは！</p>
+  <p class="title-content">
+    　Craftman Story
+    Vol.3です。今回は玉川パイプを取材してきました。玉川パイプの取材では、引抜鋼管の仕事の様子や玉川社長の話をお聞きすることができました。
+  </p>
+</div>
+<div class="img-background">
+  <h3 class="border">玉川パイプ概要</h3>
+  <div class="grid4">
+    <div>
+      <p>
+        　京急蒲田駅から1駅隣の雑色駅から徒歩10分。マンションと昔ながらの工場が立ち並ぶ都道沿いに<strong>玉川パイプ</strong>は位置しています。1959年創業の会社で、今回お話をお伺いした玉川社長は先代から工場を継いだ2代目です。大手メーカーが製造する鉄パイプを特殊サイズに加工する<strong>「引抜鋼管」</strong>を専門とし、10名ほどの職人が腕を振るっています。
+      </p>
+      <p>
+        玉川パイプのHP :
+        <a href="https://tamagawa-pipe.com/">https://tamagawa-pipe.com/</a>
+      </p>
+    </div>
+    <img
+      src="{{ url_for('static', filename='03tamagawa_02.webp') }}"
+      width="100%"
+    />
+  </div>
+</div>
+<div class="img-background" id="senban">
+  <h3 class="border">引抜鋼管とは</h3>
+  <p class="article-content2" style="text-align: left">
+    　今回、引抜鋼管の作業現場を見学させていただきました。作業の様子を動画にまとめましたので、ぜひご覧ください。また、玉川パイプのホームページにも引抜鋼管についての詳しい説明がありますので、併せてご覧ください。
+  </p>
+  <p class="article-content2" style="text-align: left">
+    玉川パイプHP「引抜鋼管とは?」 :
+    <a href="https://tamagawa-pipe.com/pipes/"
+      >https://tamagawa-pipe.com/pipes/</a
+    >
+  </p>
+  <p class="article-content2" style="text-align: left">
+    <span class="photo_text">(以下上の動画と同じ内容)</span>
+  </p>
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='01iwai_07.webp') }}"
+      width="100%"
+    />
+    <p style="margin: 0">
+      　<strong>旋盤</strong>とは、加工したい金属を高速回転させる機械のことで、<strong>高速回転する加工物に刃を押し当てること</strong>によって、<strong>金属を加工</strong>することができる。
+      この大きな機械が旋盤で、赤い四角で囲ったものが、加工する部品である。今回行う加工は、部品に、均等に溝を彫る作業だ。
+    </p>
+    <img
+      src="{{ url_for('static', filename='01iwai_08.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　まずは溝を彫る場所の位置をメーターを見ながら調整する。
+        次に滑りをよくするために切削油を流す。
+        電源をオンにして、部品が高速回転し始める。
+        そしたら、岩井さんが手前のダイヤルで刃の位置を調整する。すると<strong>部品が削られ</strong>はじめる。
+        手元でダイヤルを回すと、刃の位置が動いて、ちょっとずつ彫る深さが深くなっていく。
+        どんどんダイヤルを調整して、ちょっとずつ深く彫っていく。
+        定期的に旋盤を止め、今の深さがどのくらい彫れているかをチェックする。
+      </p>
+      <p>
+        　あとは、この作業をひたすら繰り返すそうだ。ずっと<strong>単純作業の繰り返し</strong>だそうだ。だいたい1つの部品の加工が完了するのに、3日かかるそう。
+      </p>
+    </div>
+    <img
+      src="{{ url_for('static', filename='01iwai_09.webp') }}"
+      width="100%"
+    />
+    <p style="margin: 0">
+      　なぜ一気に加工してはいけないのか？一気に彫った方が効率よく作業できそうだが、<strong>正確性が求められる</strong>ためちょっとずつ加工する。
+      旋盤は、1つの部品を高速回転させて、加工するため、ムラなく均等に加工することに向いており、正確性が求められるものに向いている。実際、岩井さんがここで加工している部品も、水力発電所のタービンの部品で、溝は反対側の部品にかっちりと合うようにする必要があるため、正確性が求められるそう。
+      <strong
+        >どの程度彫れているのかそれを見抜くところ正確性が職人さんの技術が求められるポイントだ。</strong
+      >
+    </p>
+    <img
+      src="{{ url_for('static', filename='01iwai_10.webp') }}"
+      width="100%"
+    />
+    <p style="margin: 0">
+      　こちらが作業後の部品、まだ完成はしてないが、前と比べて溝が彫られていることがわかる。
+    </p>
+  </div>
+</div>
+<div class="img-background">
+  <h3 class="border">取材班びっくりポイント!</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      我々が岩井製作所を取材、インタビューした中で4つ驚いたポイントがあった。
+    </p>
+    <ol style="font-weight: bold">
+      <a href="#factory"><li>年季の入った工場と旋盤</li></a>
+      <a href="#senban"><li>旋盤加工の巧</li></a>
+      <a href="#tech"><li>高い技術力と仕事</li></a>
+      <a href="#hitori"><li>ずっと1人で工場を操業?</li></a>
+    </ol>
+  </div>
+</div>
+<div class="img-background" id="factory">
+  <h3 class="border">年季の入った工場と旋盤</h3>
+  <div class="grid4">
+    <div class="grid3">
+      <img
+        src="{{ url_for('static', filename='01iwai_03.webp') }}"
+        width="100%"
+      />
+      <img
+        src="{{ url_for('static', filename='01iwai_04.webp') }}"
+        width="100%"
+      />
+    </div>
+    <div>
+      <p style="margin: 0">
+        　まず驚いたことは、<strong>敷地の狭さ</strong>である。岩井製作所の工場は岩井さんご夫婦のご自宅を兼ねた2階建ての一軒家で、作業スペースは正面玄関を入ってすぐのひと部屋のみだ。そのなかに様々な機械や工具が所狭しと立ち並んでいるため、辛うじて学生3,4人が入れるほどのスペースしかない。
+      </p>
+      <p class="photo_text" style="margin-top: 10px">写真1 : 岩井製作所外観</p>
+      <p class="photo_text" style="margin-top: 10px">写真2 : 工場の中</p>
+    </div>
+  </div>
+
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='01iwai_06.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　今回の主役である<strong>旋盤</strong>はそんな作業部屋の奥にひっそりと、しかし堂々と存在していた。岡山のメーカーから受注した品で、現在のもので3代目だそうだ。所々に使い古した形跡があり、年季と趣を感じる。床には金属を削る際に発生した鉄屑が散らばっており、機械の重厚感をさらに引き立たせていた。油の香りが鼻をつく部屋で、我々がその独特の空気感に圧倒されていると、岩井さんは旋盤の前に立ち、淡々と手を動かし始めた。
+      </p>
+      <p class="photo_text" style="margin-top: 10px">写真3 : 旋盤</p>
+    </div>
+  </div>
+</div>
+<div class="img-background" id="senban">
+  <h3 class="border">旋盤加工の巧</h3>
+  <p class="article-content2" style="text-align: left">
+    　今回、岩井さんが実際に旋盤を動かして金属を加工する工程を<strong>特別に</strong>見せていただくことができた。動画を見てもわかるとおり、その手さばきは実に鮮やかで、硬いはずの金属がスルスルと削れていく様子は圧巻の一言だった。以下に詳細な解説を加える。
+  </p>
+  <p class="article-content2" style="text-align: left">
+    <span class="photo_text">(以下上の動画と同じ内容)</span>
+  </p>
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='01iwai_07.webp') }}"
+      width="100%"
+    />
+    <p style="margin: 0">
+      　<strong>旋盤</strong>とは、加工したい金属を高速回転させる機械のことで、<strong>高速回転する加工物に刃を押し当てること</strong>によって、<strong>金属を加工</strong>することができる。
+      この大きな機械が旋盤で、赤い四角で囲ったものが、加工する部品である。今回行う加工は、部品に、均等に溝を彫る作業だ。
+    </p>
+    <img
+      src="{{ url_for('static', filename='01iwai_08.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　まずは溝を彫る場所の位置をメーターを見ながら調整する。
+        次に滑りをよくするために切削油を流す。
+        電源をオンにして、部品が高速回転し始める。
+        そしたら、岩井さんが手前のダイヤルで刃の位置を調整する。すると<strong>部品が削られ</strong>はじめる。
+        手元でダイヤルを回すと、刃の位置が動いて、ちょっとずつ彫る深さが深くなっていく。
+        どんどんダイヤルを調整して、ちょっとずつ深く彫っていく。
+        定期的に旋盤を止め、今の深さがどのくらい彫れているかをチェックする。
+      </p>
+      <p>
+        　あとは、この作業をひたすら繰り返すそうだ。ずっと<strong>単純作業の繰り返し</strong>だそうだ。だいたい1つの部品の加工が完了するのに、3日かかるそう。
+      </p>
+    </div>
+    <img
+      src="{{ url_for('static', filename='01iwai_09.webp') }}"
+      width="100%"
+    />
+    <p style="margin: 0">
+      　なぜ一気に加工してはいけないのか？一気に彫った方が効率よく作業できそうだが、<strong>正確性が求められる</strong>ためちょっとずつ加工する。
+      旋盤は、1つの部品を高速回転させて、加工するため、ムラなく均等に加工することに向いており、正確性が求められるものに向いている。実際、岩井さんがここで加工している部品も、水力発電所のタービンの部品で、溝は反対側の部品にかっちりと合うようにする必要があるため、正確性が求められるそう。
+      <strong
+        >どの程度彫れているのかそれを見抜くところ正確性が職人さんの技術が求められるポイントだ。</strong
+      >
+    </p>
+    <img
+      src="{{ url_for('static', filename='01iwai_10.webp') }}"
+      width="100%"
+    />
+    <p style="margin: 0">
+      　こちらが作業後の部品、まだ完成はしてないが、前と比べて溝が彫られていることがわかる。
+    </p>
+  </div>
+</div>
+<div class="img-background" id="tech">
+  <h3 class="border">高い技術力と仕事</h3>
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='01iwai_11.webp') }}"
+      width="100%"
+    />
+    <div>
+      <ul style="margin: 0">
+        <li><strong>原子力発電所</strong></li>
+        <p>
+          　岩井さんが受けた大きな仕事の最初は、<strong>原子力発電所のシリンダー製作</strong>に携わるものだった。
+        </p>
+        <p>
+          　きっかけは、「原子炉を一緒に作りませんか？」と声をかけられたことだった。旧式の小さい機械で試作品を製作したところ、合格をもらい、本格的に旋盤による製作へと進んだ。技術に関しては、日本初の取り組みだったため誰も作り方を知らず、<strong>手探り</strong>で進めていた。
+        </p>
+        <p>
+          　この仕事で最も大変だったのは、原子炉の制御棒に関する業務だった。制御棒は約100本あり、原子炉を停止させる際にはすべての制御棒を同時に上げ、同じ位置で止める必要がある。一本でも位置がずれると発熱のリスクがあるため、シリンダー製作には<strong>非常に高い精度</strong>が求められた。
+        </p>
+        <p>
+          　現在、津波対策の改修をメインに行っており、原子炉設備を20メートル高くする作業を全国53か所一つひとつ進めている。
+        </p>
+      </ul>
+    </div>
+  </div>
+  <ul class="article-content2">
+    <li><strong>東海道新幹線</strong></li>
+    <p>
+      　原子力発電所の仕事で培った高い技術力が評価され、<strong>東海道新幹線のシリンダー部品製作</strong>の仕事も舞い込んできた。
+    </p>
+    <p>
+      　岩井さんは<strong>300系から700系までの</strong>シリンダー製作に携わり、新幹線の運行に重要な役割を果たしている。特に、500系から700系への移行時には、<strong>岩井さんのシリンダー技術が活用</strong>され、東京から大阪間の所要時間を5分短縮することに成功した。この時間短縮により、列車を7本増発できるようになった。
+    </p>
+    <p>
+      　現在は、700系を最後に新規のシリンダー製作からは撤退し、シリンダーの改修に取り組んでいる。
+    </p>
+  </ul>
+  <p class="article-content2" style="text-align: left">
+    　これらの仕事は、<strong>極めて高い精密さ</strong>が求められる。<strong>岩井さんの技術力の高さ、</strong>そして小さな町工場が日本の生活を支えていることを実感させられるエピソードである。
+  </p>
+</div>
+<div class="img-background" id="hitori">
+  <h3 class="border">ずっと1人で工場を操業？</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　岩井さんは岩井製作所を継いで以来、ずっと<strong>一人で操業</strong>を続けている。その理由は、高い技術力を外部に漏らさないためだ。従業員を雇うと情報が広がるリスクがあるため、岩井製作所ならではの技術を守るために、規模を拡大せず一人で製作を続けているのだ。一人での操業を続ける中で、周囲から「もうやめたらどうか」と言われたこともあった。しかし、<strong>奥様の励ましに支えられ、</strong>今日まで事業を続けてきた。
+    </p>
+    <p>
+      　夫婦で支え合いながら築いてきた岩井製作所だが、後継者がいないため、岩井さんの代で廃業する予定である。孫や息子はいるものの、若い世代は大学に進学するなどして原子炉関連の仕事に興味を示さない。さらに、蒲田駅周辺が住宅地化しているため、仮に事業を続けるとしても工場の移転が必要になる。
+    </p>
+    <p>
+      　このような技術を次世代がどのように扱っていくのか。それが今後のカギとなるだろう。
+    </p>
+  </div>
+</div>
+<div class="img-background">
+  <h3 class="border">あとがき</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　我々取材班にとって初めての現地取材が終わった。かかった時間は2時間弱とさほど長くなかったが、<strong>とても濃密なもの</strong>だった。旋盤に出会うまでの紆余曲折、原発事業や新幹線開発の舞台裏、そして工場の現在と将来。インタビューを通して岩井さんから伺ったエピソードの数々は、戦後日本が歩んできた歴史そのものだ。我々が教科書を読んで知るような出来事を、岩井さんは当事者として目の当たりにしてきた。その過去を踏まえると、旋盤加工のひとつひとつの工程にも<strong>高度な技術</strong>が潜んでいるのに気付かされる。一度のミスも許されない作業を当たり前のようにこなす姿には、<strong>並々ならぬ職人魂</strong>を感じた。
+    </p>
+    <p>
+      　別れ際に岩井さんはこうおっしゃった。「君たちは本当に若いんだから、これからの日本を支えていかなくちゃね。」我が国を半世紀も支えてきた<strong>”縁の下の力持ち”</strong>の一言は、ずっしりと重かった。蒲田の街角の小さな工場には、幾つもの年月をかけて積み上げた<strong>たくさんの秘密とロマン</strong>が詰まっていた。
+    </p>
+  </div>
+</div>
+<div class="img-background">
+  <h3 class="border">メンバー紹介</h3>
+  <div class="box-area">
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        ライターのお仕事に興味があり、このプロジェクトに参加しました。大好きな東京の下町情緒を、町工場の取材という形で皆さんにお伝えできたらいいなと思っています！
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='no_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>野口 遼介</h3>
+          <p>取材・執筆担当</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        職人さんに直接お話を伺い、その声を文章として形にするライターの仕事に強く興味を持ち、参加させていただきました。職人さんたちの技術や想いには深い魅力があり、それをより多くの方々に届けたいです！
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='yo_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>吉永 彩乃</h3>
+          <p>取材・執筆担当</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        web制作も工場見学も大好きです。大田区の町工場の職人さんの仕事と魅力を、このwebサイトでお伝えできるように頑張ります!
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='ki_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>木南 知也</h3>
+          <p>取材・執筆・web・動画制作担当</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        『伝わりやすい文章』をモットーに記事執筆などをやっていこうと思っています。記事制作の経験はありませんが、書くことは大好きです。素人なりに一生懸命頑張ります。よろしくお願いします！
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='ko_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>小松 すず</h3>
+          <p>校正担当</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        まだまだ未熟者ではありますが、大田区のものづくり職人の方々の魅力を皆様にお伝えできるように日々学んでいきたいと思います。
+        大田区ものづくり職人の方々の物語と共に、webサイトの成長にもご期待ください。
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='to_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>さくら</h3>
+          <p>web担当</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        IT技術を含めテクノロジーに興味があり、科学技術の原点であり現在も最先端で活用されている『職人技術の魅力』について広めたいと考え、プロジェクトに参加しました。
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='mi_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>三好 琉希</h3>
+          <p>web担当</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -5,252 +5,344 @@ filename='02aoiseira01.webp') }}{% endblock %} {% block home_content %}
 <h1 class="page-title2">葵精螺製作所</h1>
 {% endblock %}{% block main_content %}
 <div class="article-title">
-    <div class="title-page"><h2 class="title"></h2></div>
-    <p class="article-date">取材日 2024.10.30</p>
-    <p class="article-date">最終更新日 2025.01.??</p>
-    <!-- 更新日時書いてね -->
-    <p class="title-content">　こんにちは！</p>
-    <p class="title-content">
-      　Craftman Story
-      Vol.2です。取材2回目は、葵精螺製作所を取材してきました！
-      葵精螺製作所の取材では、関社長の幼少期から現在に至るまでの出来事や抱えている思いなど様々なお話を聞かせていただきました。
-    </p>
+  <div class="title-page"><h2 class="title"></h2></div>
+  <p class="article-date">取材日 2024.10.30</p>
+  <p class="article-date">最終更新日 2025.01.??</p>
+  <!-- 更新日時書いてね -->
+  <p class="title-content">　こんにちは！</p>
+  <p class="title-content">
+    　Craftman Story Vol.2です。取材2回目は、葵精螺製作所を取材してきました！
+    葵精螺製作所の取材では、関社長の幼少期から現在に至るまでの出来事や抱えている思いなど様々なお話を聞かせていただきました。
+  </p>
 </div>
 
-    <div class="img-background">
-        <h3 class="border">目次</h3>
-        <div class="article-content3" style="text-align: left">
-          <div style="font-weight: bold;
-          list-style: none;">
-            <a href="#overview"><li>葵精螺製作所概要</li></a>
-            <a href="#step"><li>関社長の歩み</li></a>
-            <a href="#tech"><li>葵精螺製作所が作ってきたネジ</li></a>
-            <a href="#mission"><li>関社長と葵精螺製作所が持つ理念</li></a>
-            <a href="#last"><li>あとがき</li></a>
-            <!-- href=""の確認・関社長の歩みと葵精螺製作所が作ってきたネジの下にも具体的な分岐つくる? -->
+<div class="img-background">
+  <h3 class="border">目次</h3>
+  <div class="article-content3" style="text-align: left">
+    <div style="font-weight: bold; list-style: none">
+      <a href="#overview"><li>葵精螺製作所概要</li></a>
+      <a href="#step"><li>関社長の歩み</li></a>
+      <a href="#tech"><li>葵精螺製作所が作ってきたネジ</li></a>
+      <a href="#mission"><li>関社長と葵精螺製作所が持つ理念</li></a>
+      <a href="#last"><li>あとがき</li></a>
+      <!-- href=""の確認・関社長の歩みと葵精螺製作所が作ってきたネジの下にも具体的な分岐つくる? -->
+    </div>
+  </div>
+</div>
+
+<div class="img-background">
+  <h3 class="border" id="overview">葵精螺製作所概要</h3>
+  <!-- class="grid4"から変えた -->
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　自動車、ノートパソコン、シャープペンシル…私達の身の回りにはネジを使った製品であふれている。ネジは私達が想像する以上に繊細な作りで沢山のアイディアが詰まっている。大田区にある<strong>葵精螺製作所</strong>では、自動車から楽器、カメラなど様々な用途に合わせたネジを多くの工夫を重ねながら製造してきた。今回は葵精螺製作所の社長である関さんに今まで歩んできた人生について語っていただいた。
+    </p>
+    <div class="display">
+      <img
+        class="dis-img"
+        src="{{ url_for('static', filename='02aoiseira02.webp') }}"
+        width="100%"
+      />
+      <img
+        class="dis-img"
+        src="{{ url_for('static', filename='02aoiseira03.webp') }}"
+        width="100%"
+      />
+      <!-- 画像 -->
+    </div>
+  </div>
+</div>
+
+<div class="img-background" id="step">
+  <h3 class="border">関社長の歩み</h3>
+  <div class="article-content2" style="text-align: left">
+    <h3 class="s-title">興味に導かれてものづくりの道へ</h3>
+    <p>
+      　関さんは東京都荒川区の三河島で生まれた。しかし、戦争が始まると強制疎開をすることになり、小学一年生の夏の終戦まで壮絶な幼少期を過ごす。終戦後も屋根のない、青空教室で授業を受けた日々が続いた。今でもサイレンの音を聞くと空襲を思い出すと言う。
+    </p>
+    <p>
+      　そんな幼少期から関さんは様々な物事に対して興味を抱いていた。4歳の頃に太鼓を買ってもらった際には、どうして音がなるのだろう、と気になった関さんは木鉢で穴をあけて音を確かめようとしたというエピソードがある。中学時代には<strong>ものづくりへの興味</strong>があったために、日本大学の附属高校の入試に受かったが鮫洲の工業高校(現在では都立産業技術高専)に入学するなど、自分の興味のある道を選び歩んできた。
+    </p>
+
+    <h3 class="s-title">前勤務先での苦闘の日々</h3>
+    <p>
+      　高校を卒業後、関さんはネジを製造する工場に就職した。通信企業の下請けとして、ネジ業界では日本一の業績を上げていた立派な工場である。中卒の集団就職組が多数を占める中で、高卒の新入社員は少数派だったという。
+    </p>
+    <p>
+      　任された仕事は、通信機器用の金属の加工だった。通信機器は他の製品に比べ、通信機器は固い金属を用いており、加工しているうちにすぐ工具の歯がボロボロになった。そんな時、関さんは同じ工具を新しく置き換えるのではなく、同僚が捨てた部品を再利用していた。幼少期に培ったクリエイティビティが、就職後にも活かされたのである。
+    </p>
+    <p>
+      　そんな器用さを工場側にも認められ、関さんは若くして責任者に昇進した。順風満帆なキャリアかと思われたが、20歳の時に労働組合絡みで起きた事件に巻き込まれ、一時は仕事を続けることも困難な状況に追い込まれた。それだけではなく、妹の内定が突然取り消されるなど家族にも迷惑をかけてしまった。そんな申し訳なさと同僚への不信感から、関さんは23歳にして5年半勤めた勤務先を退職することになった。不良品は最後まで1度も出さなかったという。
+    </p>
+
+    <h3 class="s-title">独立と葵精螺製作所の創業</h3>
+    <p>
+      　仕事を辞めた後、しばらく職探しに迷っていたところに転機が訪れる。自分より1年早く前勤務先を辞めていた同業者と知り合うことができたのだ。関さんはその人とともに、現在まで続く葵精螺製作所を大田区の新田に創業した。今から62年前、1962(昭和37)年のことである。
+    </p>
+    <p>
+      　関さんは独立直後の20代の頃から、前勤務先では作れないような高品質のネジを作ることができた。そのため、受注数は日を追うごとに拡大していき、葵精螺製作所は業界内で確かな地位を築いていった。やがて受注の多さに工場のキャパシティが追い付かなくなり、何度か移転を繰り返した。そして遂に大田区の社屋1つでは足りなくなってしまい、新たに山梨に工場を開設。そこでも移転や増設を重ね、気が付けば創業当初とは比べ物にならないほど充実した生産体制が整っていたという。
+    </p>
+    <p>
+      　ITバブルの崩壊や有力クライアントの下請け撤退など何度か苦境はあったものの、長い年月を経て日本と中国に工場を持つ国際的なネジ製造企業となり、国内外から高い評価を得るまでに成長した。
+    </p>
+
+    <h3 class="s-title">関社長の積み上げた努力と現在の姿</h3>
+    <img
+      src="{{ url_for('static', filename='02aoiseira04.webp') }}"
+      alt="関社長の笑顔"
+      width="90%"
+    />
+    <p>
+      　現在は大田区に本社を構え、本社工場のほかに山梨工場、中国工場の３つの工場で製造を行っている。一般的な削りでネジを製造する方法の3～5倍の量を圧造により製造しており、その60％は自動車に使用される。この生産力が葵精螺製作所の特徴の一つである。そんな葵精螺製作所の生産力を担っている山梨工場、中国工場の写真を見ながら、関さんは誇らしげな笑顔だった。
+    </p>
+  </div>
+</div>
+
+<div class="img-background" id="tech">
+  <h3 class="border">葵精螺製作所が作ってきたネジ</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　関さんへのインタビューの後、葵精螺製作所で作られたネジを紹介していただいた。
+    </p>
+    <br />
+    <div class="display">
+      <img
+        src="{{ url_for('static', filename='02aoiseira05.webp') }}"
+        alt="ネジの説明の様子"
+        class="dis-img"
+        width="100%"
+        style="margin-right: 3%"
+      />
+      <p>
+        　事務所の机一面に数えきれない程のネジが並べられていた。そのネジ一つひとつの形は異なり、メーカーの要望に応えるには簡単にはいかないものもあったそうだ。他所では断られるメーカーの難しい依頼も、葵精螺製作所ではどうしたらできるか考え工夫することで要望に応えてきた。小さなネジの一つに込められた<strong>工夫</strong>と<strong>思い</strong>が感じられる。
+      </p>
+    </div>
+    <h3 class="s-title">ネジ製造の様子</h3>
+    <div class="display">
+      <img
+        src="{{ url_for('static', filename='02aoiseira06.webp') }}"
+        alt="工場の様子"
+        width="100%"
+        class="dis-img"
+      />
+      <img
+        src="{{ url_for('static', filename='02aoiseira07.webp') }}"
+        alt="工場の機械"
+        width="100%"
+        class="dis-img"
+      />
+      <!-- 画像入れる -->
+    </div>
+    <div class="display">
+      <p class="photo_text dis-img" style="margin-top: 10px">
+        写真1 : 工場内の様子
+      </p>
+      <p class="photo_text" style="margin-top: 10px">写真2 : 機械の一部</p>
+    </div>
+    <p style="margin-bottom: 0">
+      　実際にネジを製作している本社工場の様子も見学させていただいた。
+    </p>
+    <!-- <p class="photo_text" style="margin-top: 10px">写真 : 工場の様子</p> -->
+    <p style="margin-bottom: 5%; margin-top: 0">
+      　軽自動車より一回り小さいくらいの機械が数十台並んでいる。
+    </p>
+
+    <div class="display" style="margin-top: 3%">
+      <div>
+        <img
+          src="{{ url_for('static', filename='02aoiseira08.webp') }}"
+          alt="ネジの材料"
+          width="80%"
+        />
+        <img
+          src="{{ url_for('static', filename='02aoiseira09.webp') }}"
+          alt="ネジの製造過程"
+          width="80%"
+        />
+      </div>
+      <div class="dis-p">
+        <p>　ネジの材料は細長い棒状のものである。</p>
+        <p>
+          　この材料が機械の中に入ると切断され、圧力をかけられることで金型に合わせて加工される。この工程を繰り返すことで、完成品の形に加工されていく。
+        </p>
+        <p>
+          　通常のネジの加工は削る工程があるため、材料にロスが生じる。しかし葵精螺製作所の特徴である<strong>圧造による加工</strong>では、削りではなく金型と圧力で形を作るため、100㎏の材料から100㎏のネジを作ることが可能だそう。<strong>「加工方法はSDGsです」</strong>と教えてくださった。
+        </p>
+        <p>
+          　この圧造のための金型の製作、機械の調整、そしてネジの加工方法の設計は職人の方々が行っている。金型の製作を行える職人の方は山梨工場と本社工場に3名おり、本社工場の方は一人で全ての工程を行える唯一の職人さんだそうだ。それくらい高難度の職人技が金型の製作には施されている。また、圧造を行う機械の調整も職人さんの勘所で行うため難しい作業であり、調整箇所はとても多い。
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="img-background" id="mission">
+  <h3 class="border">関社長と葵精螺製作所が持つ理念</h3>
+  <div class="article-content2" style="text-align: left">
+    <div class="display">
+      <img
+        src="{{ url_for('static', filename='02aoiseira10.webp') }}"
+        alt="葵精螺製作所の理念"
+        class="dis-img"
+        width="100%"
+        style="margin-right: 3%"
+      />
+      <!-- 画像入れる -->
+      <div class="dis-p">
+        <p>
+          　創業から半世紀近く、優れた工業製品を作り出してきた葵精螺製作所。その技術の根源には、関さんが幼い頃から持ち続けてきた「好奇心」と「頭の柔らかさ」がある。
+        </p>
+        <p style="margin-bottom: 0">
+          　前述した太鼓のエピソードからも分かるように、様々なものの構造に興味を持ち、自分で調べていくうちに、知識と洞察力が養われていった。そして、疑問を
+        </p>
+        <p style="margin-top: 0">
+          <strong>「なぜ？」</strong
+          >でとどめずに<strong>「ならどうすればいいんだろう？」</strong>に転換することで、仕事での難局にも柔軟に対応できる。このメソッドは葵精螺製作所の創業以来一貫しているんだそう。
+        </p>
+      </div>
+    </div>
+    <p>
+      　代表例として、こんな話がある。以前、自動車メーカーからの依頼で、極端に首下の部分が長いネジを作ることになった。この製品は通常の工具では作れないため、競合他社には不可能な要求だったが、関さんは諦めなかった。今まで使っていた機械を改造し、通常で首下30mmまでしか対応していないところを最大41mmまで延長させることに成功したのだ。こうして無事に部品を製造することができ、依頼主からの信頼もさらに深まった。「できない」と思われていることを試行錯誤で「できる」ようにする。関さんはピンチを幾度となくチャンスに変え、変化し続ける社会に吞まれることなく工場を成長させてきた。
+    </p>
+    <p>
+      　これらのメソッドはどこかで身に付けたわけではなく、物心がついた時には既に持っていたというので、もはや天才肌としか言いようがない。しかし、その仕事との向き合い方はこれからの日本においてとても重要な意味を持ちそうだ。様々な社会問題が山積し、日本を取り巻く困難はこれからさらに増えるだろう。そんな時こそ、<strong>「発想の転換」</strong>と<strong>「不可能を可能にする力」</strong>が求められるのだ。
+    </p>
+    <div style="text-align: center">
+      <img
+        src="{{ url_for('static', filename='02aoiseira11.webp') }}"
+        alt="語る関社長"
+        class=""
+        width="70%"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="img-background" id="last">
+  <h3 class="border">あとがき</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　葵精螺製作所の取材を通し、私たちは単に関氏のこれまでの歩みについて話を聞いたのではなく非常に多くのことを学んだ。成功ばかりではなく、思いもよらない形で巻き込まれるハプニング、その中でも地道に積み上げてきた努力が関氏の現在の姿を表している。
+    </p>
+    <p>
+      　そして今、葵精螺製作所の理念として掲げられている「できないと決めつけない」という言葉は誰にとっても言えることだろう。関さんは笑顔で私達に「世の中できないことなんてないんだから、君たち頑張れよ」そうエールを送ってくださった。私たちは関氏ほどの人生における成功も挫折もほとんど未経験でありながら、関さんから送っていただいた言葉に人生の重みとこの先の未来への勇気をもらった。
+    </p>
+  </div>
+</div>
+
+<div class="img-background">
+  <h3 class="border">メンバー紹介</h3>
+  <div class="box-area">
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        ライターのお仕事に興味があり、このプロジェクトに参加しました。大好きな東京の下町情緒を、町工場の取材という形で皆さんにお伝えできたらいいなと思っています！
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='no_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
           </div>
+        </div>
+        <div class="box-text">
+          <h3>野口 遼介</h3>
+          <p>取材・執筆担当</p>
         </div>
       </div>
+    </div>
 
-    <div class="img-background">
-        <h3 class="border" id="overview">葵精螺製作所概要</h3>
-            <!-- class="grid4"から変えた -->
-          <div class="article-content2" style="text-align: left">
-          <p>
-            　自動車、ノートパソコン、シャープペンシル…私達の身の回りにはネジを使った製品であふれている。ネジは私達が想像する以上に繊細な作りで沢山のアイディアが詰まっている。大田区にある<strong>葵精螺製作所</strong>では、自動車から楽器、カメラなど様々な用途に合わせたネジを多くの工夫を重ねながら製造してきた。今回は葵精螺製作所の社長である関さんに今まで歩んできた人生について語っていただいた。
-          </p>
-          <div class="display">
-           <img class="dis-img" src="{{ url_for('static', filename='02aoiseira02.webp') }}" width="100%" />
-           <img class="dis-img" src="{{ url_for('static', filename='02aoiseira03.webp') }}" width="100%" />
-          <!-- 画像 -->
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        ものづくりに興味があり、職人さんの技術を見て伝えることのできるライターとして参加しました。楽しみながら職人さんの想いや技術を記事にして届けたいと思います。
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='yo_a_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
           </div>
         </div>
-    </div>
-
-    <div class="img-background" id="step">
-        <h3 class="border">関社長の歩み</h3>
-        <div class="article-content2" style="text-align: left">
-          <h3 class="s-title">興味に導かれてものづくりの道へ</h3>
-          <p>　関さんは東京都荒川区の三河島で生まれた。しかし、戦争が始まると強制疎開をすることになり、小学一年生の夏の終戦まで壮絶な幼少期を過ごす。終戦後も屋根のない、青空教室で授業を受けた日々が続いた。今でもサイレンの音を聞くと空襲を思い出すと言う。</p>
-          <p>　そんな幼少期から関さんは様々な物事に対して興味を抱いていた。4歳の頃に太鼓を買ってもらった際には、どうして音がなるのだろう、と気になった関さんは木鉢で穴をあけて音を確かめようとしたというエピソードがある。中学時代には<strong>ものづくりへの興味</strong>があったために、日本大学の附属高校の入試に受かったが鮫洲の工業高校(現在では都立産業技術高専)に入学するなど、自分の興味のある道を選び歩んできた。</p>
-
-          <h3 class="s-title">前勤務先での苦闘の日々</h3>
-          <p>　高校を卒業後、関さんはネジを製造する工場に就職した。通信企業の下請けとして、ネジ業界では日本一の業績を上げていた立派な工場である。中卒の集団就職組が多数を占める中で、高卒の新入社員は少数派だったという。</p>
-          <p>　任された仕事は、通信機器用の金属の加工だった。通信機器は他の製品に比べ、通信機器は固い金属を用いており、加工しているうちにすぐ工具の歯がボロボロになった。そんな時、関さんは同じ工具を新しく置き換えるのではなく、同僚が捨てた部品を再利用していた。幼少期に培ったクリエイティビティが、就職後にも活かされたのである。</p>
-          <p>　そんな器用さを工場側にも認められ、関さんは若くして責任者に昇進した。順風満帆なキャリアかと思われたが、20歳の時に労働組合絡みで起きた事件に巻き込まれ、一時は仕事を続けることも困難な状況に追い込まれた。それだけではなく、妹の内定が突然取り消されるなど家族にも迷惑をかけてしまった。そんな申し訳なさと同僚への不信感から、関さんは23歳にして5年半勤めた勤務先を退職することになった。不良品は最後まで1度も出さなかったという。</p>
-
-          <h3 class="s-title">独立と葵精螺製作所の創業</h3>
-          <p>　仕事を辞めた後、しばらく職探しに迷っていたところに転機が訪れる。自分より1年早く前勤務先を辞めていた同業者と知り合うことができたのだ。関さんはその人とともに、現在まで続く葵精螺製作所を大田区の新田に創業した。今から62年前、1962(昭和37)年のことである。</p>
-          <p>　関さんは独立直後の20代の頃から、前勤務先では作れないような高品質のネジを作ることができた。そのため、受注数は日を追うごとに拡大していき、葵精螺製作所は業界内で確かな地位を築いていった。やがて受注の多さに工場のキャパシティが追い付かなくなり、何度か移転を繰り返した。そして遂に大田区の社屋1つでは足りなくなってしまい、新たに山梨に工場を開設。そこでも移転や増設を重ね、気が付けば創業当初とは比べ物にならないほど充実した生産体制が整っていたという。</p>
-          <p>　ITバブルの崩壊や有力クライアントの下請け撤退など何度か苦境はあったものの、長い年月を経て日本と中国に工場を持つ国際的なネジ製造企業となり、国内外から高い評価を得るまでに成長した。</p>
-
-          <h3 class="s-title">関社長の積み上げた努力と現在の姿</h3>
-          <img src="{{ url_for('static', filename='02aoiseira04.webp') }}" alt="関社長の笑顔" width="90%" />
-          <p>　現在は大田区に本社を構え、本社工場のほかに山梨工場、中国工場の３つの工場で製造を行っている。一般的な削りでネジを製造する方法の3～5倍の量を圧造により製造しており、その60％は自動車に使用される。この生産力が葵精螺製作所の特徴の一つである。そんな葵精螺製作所の生産力を担っている山梨工場、中国工場の写真を見ながら、関さんは誇らしげな笑顔だった。</p>
+        <div class="box-text">
+          <h3>吉田 彩莉</h3>
+          <p>取材・執筆担当</p>
         </div>
+      </div>
     </div>
 
-    <div class="img-background" id="tech">
-        <h3 class="border">葵精螺製作所が作ってきたネジ</h3>
-        <div class="article-content2" style="text-align: left">
-            <p>　関さんへのインタビューの後、葵精螺製作所で作られたネジを紹介していただいた。</p>
-            <br>
-            <div class="display">
-                <img src="{{ url_for('static', filename='02aoiseira05.webp') }}" alt="ネジの説明の様子" class="dis-img" width="100%" style="margin-right: 3%;"/>
-                <p>　事務所の机一面に数えきれない程のネジが並べられていた。そのネジ一つひとつの形は異なり、メーカーの要望に応えるには簡単にはいかないものもあったそうだ。他所では断られるメーカーの難しい依頼も、葵精螺製作所ではどうしたらできるか考え工夫することで要望に応えてきた。小さなネジの一つに込められた<strong>工夫</strong>と<strong>思い</strong>が感じられる。</p>
-            </div>
-            <h3 class="s-title">ネジ製造の様子</h3>
-            <div class="display">
-                <img src="{{ url_for('static', filename='02aoiseira06.webp') }}" alt="工場の様子" width="100%" class="dis-img"/>
-                <img src="{{ url_for('static', filename='02aoiseira07.webp') }}" alt="工場の機械" width="100%" class="dis-img"/>
-                <!-- 画像入れる -->
-            </div>
-            <div class="display">
-                <p class="photo_text dis-img" style="margin-top: 10px">写真1 : 工場内の様子</p>
-                <p class="photo_text" style="margin-top: 10px">写真2 : 機械の一部</p>
-            </div>
-            <p style="margin-bottom:0;">　実際にネジを製作している本社工場の様子も見学させていただいた。</p>
-            <!-- <p class="photo_text" style="margin-top: 10px">写真 : 工場の様子</p> -->
-            <p  style="margin-bottom: 5%;
-            margin-top:0;">　軽自動車より一回り小さいくらいの機械が数十台並んでいる。</p>
-            
-            <div class="display" style="margin-top: 3%;">
-                <div>
-                    <img src="{{ url_for('static', filename='02aoiseira08.webp') }}" alt="ネジの材料" width="80%"/>
-                    <img src="{{ url_for('static', filename='02aoiseira09.webp') }}" alt="ネジの製造過程" width="80%"/>
-                </div>
-                <div class="dis-p">
-                    <p>　ネジの材料は細長い棒状のものである。</p>
-                    <p>　この材料が機械の中に入ると切断され、圧力をかけられることで金型に合わせて加工される。この工程を繰り返すことで、完成品の形に加工されていく。</p>
-                    <p>　通常のネジの加工は削る工程があるため、材料にロスが生じる。しかし葵精螺製作所の特徴である<strong>圧造による加工</strong>では、削りではなく金型と圧力で形を作るため、100㎏の材料から100㎏のネジを作ることが可能だそう。<strong>「加工方法はSDGsです」</strong>と教えてくださった。</p>
-                    <p>　この圧造のための金型の製作、機械の調整、そしてネジの加工方法の設計は職人の方々が行っている。金型の製作を行える職人の方は山梨工場と本社工場に3名おり、本社工場の方は一人で全ての工程を行える唯一の職人さんだそうだ。それくらい高難度の職人技が金型の製作には施されている。また、圧造を行う機械の調整も職人さんの勘所で行うため難しい作業であり、調整箇所はとても多い。</p>
-                </div>
-            </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        まだまだ未熟者ではありますが、大田区のものづくり職人の方々の魅力を皆様にお伝えできるように日々学んでいきたいと思います。
+        大田区ものづくり職人の方々の物語と共に、webサイトの成長にもご期待ください。
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='to_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
         </div>
-    </div>
-
-    <div class="img-background" id="mission">
-        <h3 class="border">関社長と葵精螺製作所が持つ理念</h3>
-        <div class="article-content2" style="text-align: left">
-            <div class="display">
-                <img src="{{ url_for('static', filename='02aoiseira10.webp') }}" alt="葵精螺製作所の理念" class="dis-img" width="100%" style="margin-right: 3%;" />
-            <!-- 画像入れる -->
-                <div class="dis-p">
-                    <p>　創業から半世紀近く、優れた工業製品を作り出してきた葵精螺製作所。その技術の根源には、関さんが幼い頃から持ち続けてきた「好奇心」と「頭の柔らかさ」がある。</p>
-                    <p style="margin-bottom: 0;">　前述した太鼓のエピソードからも分かるように、様々なものの構造に興味を持ち、自分で調べていくうちに、知識と洞察力が養われていった。そして、疑問を</p>
-                    <p style="margin-top: 0;"><strong>「なぜ？」</strong>でとどめずに<strong>「ならどうすればいいんだろう？」</strong>に転換することで、仕事での難局にも柔軟に対応できる。このメソッドは葵精螺製作所の創業以来一貫しているんだそう。</p>
-                </div>
-            </div>
-            <p>　代表例として、こんな話がある。以前、自動車メーカーからの依頼で、極端に首下の部分が長いネジを作ることになった。この製品は通常の工具では作れないため、競合他社には不可能な要求だったが、関さんは諦めなかった。今まで使っていた機械を改造し、通常で首下30mmまでしか対応していないところを最大41mmまで延長させることに成功したのだ。こうして無事に部品を製造することができ、依頼主からの信頼もさらに深まった。「できない」と思われていることを試行錯誤で「できる」ようにする。関さんはピンチを幾度となくチャンスに変え、変化し続ける社会に吞まれることなく工場を成長させてきた。</p>
-            <p>　これらのメソッドはどこかで身に付けたわけではなく、物心がついた時には既に持っていたというので、もはや天才肌としか言いようがない。しかし、その仕事との向き合い方はこれからの日本においてとても重要な意味を持ちそうだ。様々な社会問題が山積し、日本を取り巻く困難はこれからさらに増えるだろう。そんな時こそ、<strong>「発想の転換」</strong>と<strong>「不可能を可能にする力」</strong>が求められるのだ。</p>
-            <div style="text-align: center;">
-                <img src="{{ url_for('static', filename='02aoiseira11.webp') }}" alt="語る関社長" class=""  width="70%">
-            </div>
+        <div class="box-text">
+          <h3>さくら</h3>
+          <p>取材・執筆・web担当</p>
         </div>
+      </div>
     </div>
 
-    <div class="img-background" id="last">
-        <h3 class="border">あとがき</h3>
-        <div class="article-content2" style="text-align: left">
-            <p>　葵精螺製作所の取材を通し、私たちは単に関氏のこれまでの歩みについて話を聞いたのではなく非常に多くのことを学んだ。成功ばかりではなく、思いもよらない形で巻き込まれるハプニング、その中でも地道に積み上げてきた努力が関氏の現在の姿を表している。</p>
-            <p>　そして今、葵精螺製作所の理念として掲げられている「できないと決めつけない」という言葉は誰にとっても言えることだろう。関さんは笑顔で私達に「世の中できないことなんてないんだから、君たち頑張れよ」そうエールを送ってくださった。私たちは関氏ほどの人生における成功も挫折もほとんど未経験でありながら、関さんから送っていただいた言葉に人生の重みとこの先の未来への勇気をもらった。</p>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        インタビュー・記事執筆のアドバイザーとして活動に参加しています。職人さんの人生や技術の「ありのまま」を読み手にわかりやすく伝えられるようなインタビュー設計、記事執筆を心掛けています。
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='u_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
         </div>
-    </div>
-
-    <div class="img-background">
-        <h3 class="border">メンバー紹介</h3>
-        <div class="box-area">
-            <div class="box-parent">
-                <div class="box-sentence non_observed5">
-                  ライターのお仕事に興味があり、このプロジェクトに参加しました。大好きな東京の下町情緒を、町工場の取材という形で皆さんにお伝えできたらいいなと思っています！
-                </div>
-                <div class="box">
-                  <div class="box-img2">
-                    <div class="box-img">
-                      <img
-                        src="{{ url_for('static', filename='no_img.webp') }}"
-                        alt="個人の画像"
-                        class="writer-box"
-                        width="100%"
-                      />
-                    </div>
-                  </div>
-                  <div class="box-text">
-                    <h3>野口 遼介</h3>
-                    <p>取材・執筆担当</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box-parent">
-                <div class="box-sentence non_observed5">
-                    ものづくりに興味があり、職人さんの技術を見て伝えることのできるライターとして参加しました。楽しみながら職人さんの想いや技術を記事にして届けたいと思います。
-                </div>
-                <div class="box">
-                  <div class="box-img2">
-                    <div class="box-img">
-                      <img
-                        src="{{ url_for('static', filename='yo_a_img.webp') }}"
-                        alt="個人の画像"
-                        class="writer-box"
-                        width="100%"
-                      />
-                    </div>
-                  </div>
-                  <div class="box-text">
-                    <h3>吉田 彩莉</h3>
-                    <p>取材・執筆担当</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box-parent">
-                <div class="box-sentence non_observed5">
-                    まだまだ未熟者ではありますが、大田区のものづくり職人の方々の魅力を皆様にお伝えできるように日々学んでいきたいと思います。
-                    大田区ものづくり職人の方々の物語と共に、webサイトの成長にもご期待ください。
-                </div>
-                <div class="box">
-                  <div class="box-img2">
-                    <div class="box-img">
-                      <img
-                        src="{{ url_for('static', filename='to_img.webp') }}"
-                        alt="個人の画像"
-                        class="writer-box"
-                        width="100%"
-                      />
-                    </div>
-                  </div>
-                  <div class="box-text">
-                    <h3>さくら</h3>
-                    <p>取材・執筆・web担当</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box-parent">
-                <div class="box-sentence non_observed5">
-                    インタビュー・記事執筆のアドバイザーとして活動に参加しています。職人さんの人生や技術の「ありのまま」を読み手にわかりやすく伝えられるようなインタビュー設計、記事執筆を心掛けています。
-                </div>
-                <div class="box">
-                  <div class="box-img2">
-                    <div class="box-img">
-                      <img
-                        src="{{ url_for('static', filename='u_img.webp') }}"
-                        alt="個人の画像"
-                        class="writer-box"
-                        width="100%"
-                      />
-                    </div>
-                  </div>
-                  <div class="box-text">
-                    <h3>上原 大</h3>
-                    <p>校正担当</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="box-parent">
-                <div class="box-sentence non_observed5">
-                  web制作も工場見学も大好きです。大田区の町工場の職人さんの仕事と魅力を、このwebサイトでお伝えできるように頑張ります!
-                </div>
-                <div class="box">
-                  <div class="box-img2">
-                    <div class="box-img">
-                      <img
-                        src="{{ url_for('static', filename='ki_img.webp') }}"
-                        alt="個人の画像"
-                        class="writer-box"
-                        width="100%"
-                      />
-                    </div>
-                  </div>
-                  <div class="box-text">
-                    <h3>木南 知也</h3>
-                    <p>web担当</p>
-                  </div>
-                </div>
-              </div>
-
+        <div class="box-text">
+          <h3>上原 大</h3>
+          <p>校正担当</p>
         </div>
+      </div>
     </div>
-    {% endblock %}
+
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        web制作も工場見学も大好きです。大田区の町工場の職人さんの仕事と魅力を、このwebサイトでお伝えできるように頑張ります!
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='ki_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>木南 知也</h3>
+          <p>web担当</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

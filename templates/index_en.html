@@ -8,6 +8,42 @@ endblock %} {% block home_content %}
   <h3 class="border">What's New</h3>
   <div class="grid3">
     <div>
+      <a href="/vol/3/en" style="text-decoration: none">
+        <div class="what_new_box" style="border-left: solid 10px #b74545">
+          <div
+            class="what_new_box_anim non_observed"
+            style="background-color: #b74545"
+          ></div>
+          <div class="what_new_box_main non_observed2">
+            <p style="margin: 10px; margin-bottom: 5px">
+              <span class="new-badge">New!</span>1-??-2025
+            </p>
+            <h3 style="margin: 10px; margin-top: 0">
+              The article of Tamagawa Pipe has been published!!!
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div>
+      <a href="/vol/2/en" style="text-decoration: none">
+        <div class="what_new_box" style="border-left: solid 10px #5845b7">
+          <div
+            class="what_new_box_anim non_observed"
+            style="background-color: #5845b7"
+          ></div>
+          <div class="what_new_box_main non_observed2">
+            <p style="margin: 10px; margin-bottom: 5px">
+              <span class="new-badge">New!</span>1-??-2025
+            </p>
+            <h3 style="margin: 10px; margin-top: 0">
+              The article of Aoiseira Factory has been published!!!
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div>
       <a href="/vol/1/en" style="text-decoration: none">
         <div class="what_new_box" style="border-left: solid 10px #45b76f">
           <div
@@ -15,9 +51,7 @@ endblock %} {% block home_content %}
             style="background-color: #45b76f"
           ></div>
           <div class="what_new_box_main non_observed2">
-            <p style="margin: 10px; margin-bottom: 5px">
-              <span class="new-badge">New!</span>12-11-2024
-            </p>
+            <p style="margin: 10px; margin-bottom: 5px">12-11-2024</p>
             <h3 style="margin: 10px; margin-top: 0">
               The article of Iwai Factory has been published!!!
             </h3>
@@ -104,22 +138,41 @@ endblock %} {% block home_content %}
         </div>
       </div></a
     >
-    <a href="/vol/2" style="text-decoration: none; color: black">
-      <div class="cs_card" style="border-right: solid 10px #4f96f6">
+    <a href="/vol/2/en" style="text-decoration: none; color: black">
+      <div class="cs_card" style="border-right: solid 10px #ccc91a">
         <img
           src="{{ url_for('static', filename='02aoiseira01.webp') }}"
           style="min-height: 100%; max-width: 100%; object-fit: cover"
-          alt="葵精螺製作所"
+          alt="Aoiseira Factory"
         />
         <!-- filename=''の箇所に画像を入れる -->
         <div style="position: relative">
-          <div class="cs_card_anim" style="background-color: #4f96f6"></div>
+          <div class="cs_card_anim" style="background-color: #ccc91a"></div>
           <div class="cs_card_main non_observed2">
             <div class="cs_card_back"></div>
             <p style="margin: 0; text-align: right">01-??-2025</p>
             <!-- 日付変更する -->
             <h3 class="cs_border" style="margin: 0"><u> Vol.2</u></h3>
             <p><u>Aoiseira Factory</u></p>
+          </div>
+        </div>
+      </div></a
+    >
+    <a href="/vol/3/en" style="text-decoration: none; color: black">
+      <div class="cs_card" style="border-right: solid 10px #31b128">
+        <img
+          src="{{ url_for('static', filename='03tamagawa_01.webp') }}"
+          style="min-height: 100%; max-width: 100%; object-fit: cover"
+          alt="Tamagawa Pipe thumbnail"
+        />
+        <div style="position: relative">
+          <div class="cs_card_anim" style="background-color: #31b128"></div>
+          <div class="cs_card_main non_observed2">
+            <div class="cs_card_back"></div>
+            <p style="margin: 0; text-align: right">01-??-2025</p>
+            <!-- 日付変更する -->
+            <h3 class="cs_border" style="margin: 0"><u> Vol.3</u></h3>
+            <p><u>Tamagawa Pipe</u></p>
           </div>
         </div>
       </div></a

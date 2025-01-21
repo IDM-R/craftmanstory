@@ -561,6 +561,20 @@ body {
   grid-template-rows: 3fr 1fr 3fr;
 }
 
+/* display */
+.display{
+  display: flex;
+  gap:2px;
+}
+
+.dis-img{
+  width:50%;
+}
+
+.dis-p{
+  text-align: left;
+}
+
 /*フッター
 -----------------*/
 
@@ -786,6 +800,17 @@ footer {
 
   .grid2 {
     grid-template-columns: 1fr;
+  }
+
+  .display{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+  } 
+
+  .dis-img{
+    grid-template-columns: 1fr;
+    width:100%;
   }
 
   .scroll_down {

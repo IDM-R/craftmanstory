@@ -626,6 +626,11 @@ footer {
   margin-right: 20%;
 }
 
+.article-content3{
+  margin-left:40%;
+  font-size:20px
+}
+
 .article-date {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.484);

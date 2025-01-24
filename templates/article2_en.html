@@ -1,0 +1,479 @@
+{% extends "layout_en.html" %} {% block title %} Craftman Story Vol.2
+-葵精螺製作所 {% endblock %} {% block home_photo %}{{ url_for('static',
+filename='02aoiseira01.webp') }}{% endblock %} {% block home_content %}
+<h1 class="page-title1"><u>Vol.2</u></h1>
+<h1 class="page-title2">Aoiseira Factory</h1>
+{% endblock %}{% block main_content %}
+<div class="article-title">
+  <div class="title-page"><h2 class="title"></h2></div>
+  <p class="article-date">The day of interviewing 10.30.2024</p>
+  <p class="article-date">Last update 01.??.2025</p>
+  <!-- 更新日時書いてね -->
+  <p class="title-content">　Hello!</p>
+  <p class="title-content">
+    　This is Craftman Story Vol. 2. For our second interview, we visited
+    Aoiseira Factory! During the interview, we had the opportunity to hear from
+    President Seki about various topics, including his childhood experiences and
+    the thoughts he holds today.
+  </p>
+</div>
+
+<div class="img-background">
+  <h3 class="border">Table of Contents</h3>
+  <div class="article-content3" style="text-align: left">
+    <div style="font-weight: bold; list-style: none">
+      <a href="#overview"><li>Overview of Aoiseira Factory</li></a>
+      <a href="#step"><li>President Seki's Journey</li></a>
+      <a href="#tech"><li>The Screws Crafted by Aoiseira Factory</li></a>
+      <a href="#mission"
+        ><li>The Philosophy of President Seki and Aoiseira Factory</li></a
+      >
+      <a href="#last"><li>Afterword</li></a>
+      <!-- href=""の確認・関社長の歩みと葵精螺製作所が作ってきたネジの下にも具体的な分岐つくる? -->
+    </div>
+  </div>
+</div>
+
+<div class="img-background">
+  <h3 class="border" id="overview">Overview of Aoiseira Factory</h3>
+  <!-- class="grid4"から変えた -->
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　Cars, laptops, mechanical pencils... Our surroundings are filled with
+      products that use screws. Screws are crafted with far more precision and
+      packed with ideas than we might imagine. In
+      <strong>Aoiseira Factory</strong>, located in Ota Ward, screws for various
+      purposes—from automobiles to musical instruments and cameras—have been
+      manufactured with great ingenuity. This time, we had the opportunity to
+      hear from President Seki about the journey of his life so far.
+    </p>
+    <div class="display">
+      <img
+        class="dis-img"
+        src="{{ url_for('static', filename='02aoiseira02.webp') }}"
+        width="100%"
+      />
+      <img
+        class="dis-img"
+        src="{{ url_for('static', filename='02aoiseira03.webp') }}"
+        width="100%"
+      />
+      <!-- 画像 -->
+    </div>
+  </div>
+</div>
+
+<div class="img-background" id="step">
+  <h3 class="border">President Seki's Journey</h3>
+  <div class="article-content2" style="text-align: left">
+    <h3 class="s-title">Driven by Curiosity into the World of Craftsmanship</h3>
+    <p>
+      　Mr. Seki was born in Mikawashima, Arakawa Ward, Tokyo. However, with the
+      outbreak of war, he was forced to evacuate, enduring a harrowing childhood
+      until the summer of his first year in elementary school, when the war
+      ended. Even after the war, he attended classes in open-air classrooms
+      without roofs. He recalls that even now, the sound of a siren brings back
+      memories of air raids.
+    </p>
+    <p>
+      　From his early years, Mr. Seki showed a deep curiosity about various
+      things. At the age of four, when he received a drum, he wondered why it
+      made sound. Driven by curiosity, he tried making a hole in it with
+      drumsticks to understand the mechanism. During his middle school years,
+      his <strong>interest in craftsmanship</strong> led him to pursue a path
+      aligned with his passions. Though he passed the entrance exam for the
+      affiliated high school of Nihon University, he chose to attend Samezu
+      Technical High School (now Tokyo Metropolitan College of Industrial
+      Technology), carving his own path based on his interests.
+    </p>
+
+    <h3 class="s-title">Struggles at His Previous Workplace</h3>
+    <p>
+      　After graduating from high school, Mr. Seki began working at a factory
+      specializing in screw manufacturing. It was a reputable factory that had
+      achieved top performance in the screw industry as a subcontractor for
+      telecommunications companies. In an environment where the majority of
+      employees were middle school graduates hired through collective employment
+      programs, high school graduates like Mr.Seki were in the minority.
+    </p>
+    <p>
+      　The work he was assigned involved processing metal for
+      telecommunications equipment. Unlike other products, telecommunications
+      equipment required harder metals, which quickly wore down the tools used.
+      In such cases, instead of replacing the tools with new ones, Mr. Seki
+      reused parts discarded by his colleagues. The creativity he had cultivated
+      during his childhood proved useful even after entering the workforce.
+    </p>
+    <p>
+      　Mr. Seki’s resourcefulness was recognized by the factory, and he was
+      promoted to a managerial position at a young age. What seemed to be a
+      smooth career, however, took a turn when, at the age of 20, he became
+      involved in an incident related to the labor union. This event made it
+      difficult for him to continue working, and worse, it caused trouble for
+      his family, including the sudden cancellation of his younger sister’s job
+      offer. Overcome by guilt and distrust toward his colleagues, Mr. Seki
+      decided to leave the company at the age of 23 after five and a half years
+      of service. Remarkably, he never produced a single defective product
+      during his time there.
+    </p>
+    <h3 class="s-title">Independence and the Founding of Aoiseira Factory</h3>
+    <p>
+      　After leaving his previous job, Mr. Seki spent some time struggling to
+      find a new position. However, a turning point came when he met a fellow
+      professional who had left the same company a year earlier. Together, they
+      founded Aoiseira Factory, which continues to this day, in Nitta, Ota Ward.
+      This was 62 years ago, in 1962 (Showa 37).
+    </p>
+    <p>
+      　In his twenties, shortly after becoming independent, Mr. Seki was
+      already able to produce high-quality screws that his previous workplace
+      could not manufacture. As a result, the number of orders steadily
+      increased, and Aoiseira Factory established a solid position within the
+      industry. Eventually, the volume of orders exceeded the factory's
+      capacity, prompting several relocations. Finally, the headquarters in Ota
+      Ward became insufficient, leading to the opening of a new factory in
+      Yamanashi. There, through further relocations and expansions, Aoiseira
+      Factory developed a production system that far surpassed what it had at
+      its inception.
+    </p>
+    <p>
+      　Despite facing difficult situations such as the collapse of the IT
+      bubble and the withdrawal of major clients from subcontracting, Aoiseira
+      Factory grew into an international screw manufacturing company with
+      factories in Japan and China, earning high praise both domestically and
+      internationally.
+    </p>
+
+    <h3 class="s-title">
+      The Efforts Accumulated by President Seki and the Current State
+    </h3>
+    <img
+      src="{{ url_for('static', filename='02aoiseira04.webp') }}"
+      alt="関社長の笑顔"
+      width="90%"
+    />
+    <p>
+      　Today, Aoiseira Factory operates with its headquarters in Ota Ward and
+      three factories: the main factory, the Yamanashi factory, and the China
+      factory. By using cold forging, the company manufactures 3 to 5 times the
+      quantity of screws compared to the general method of cutting, with 60% of
+      the production used in the automotive industry. This production capacity
+      is one of the key features of Aoiseira Factory. As he looked at photos of
+      the Yamanashi and China factories, which play a crucial role in this
+      production capacity, President Seki wore a proud smile.
+    </p>
+  </div>
+</div>
+
+<div class="img-background" id="tech">
+  <h3 class="border">The Screws Crafted by Aoiseira Factory</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　After the interview with Mr. Seki, we were shown the screws manufactured
+      by Aoiseira Factory.
+    </p>
+    <br />
+    <div class="display">
+      <img
+        src="{{ url_for('static', filename='02aoiseira05.webp') }}"
+        alt="ネジの説明の様子"
+        class="dis-img"
+        width="100%"
+        style="margin-right: 3%"
+      />
+      <p>
+        　Countless screws were laid out across the desk in the office. Each
+        screw had a different shape, and some of them were quite difficult to
+        produce in order to meet the manufacturers' demands. While other
+        factories would refuse challenging orders, Aoiseira Factory would think
+        creatively and find ways to meet these requests. The
+        <strong>creativity</strong> and <strong>thought</strong> put into each
+        small screw were evident.
+      </p>
+    </div>
+    <h3 class="s-title">The Process of Screw Manufacturing</h3>
+    <div class="display">
+      <img
+        src="{{ url_for('static', filename='02aoiseira06.webp') }}"
+        alt="工場の様子"
+        width="100%"
+        class="dis-img"
+      />
+      <img
+        src="{{ url_for('static', filename='02aoiseira07.webp') }}"
+        alt="工場の機械"
+        width="100%"
+        class="dis-img"
+      />
+      <!-- 画像入れる -->
+    </div>
+    <div class="display">
+      <p class="photo_text dis-img" style="margin-top: 10px">
+        Photo 1: View of the factory
+      </p>
+      <p class="photo_text" style="margin-top: 10px">
+        Photo 2: Part of the machinery
+      </p>
+    </div>
+    <p>
+      　We were also able to observe the actual manufacturing process at the
+      headquarters factory. Several dozen machines, each about the size of a
+      small car, were lined up.
+    </p>
+
+    <div class="display" style="margin-top: 3%">
+      <div>
+        <img
+          src="{{ url_for('static', filename='02aoiseira08.webp') }}"
+          alt="ネジの材料"
+          width="80%"
+        />
+        <img
+          src="{{ url_for('static', filename='02aoiseira09.webp') }}"
+          alt="ネジの製造過程"
+          width="80%"
+        />
+      </div>
+      <div class="dis-p">
+        <p>
+          　The material used for the screws is a long, thin rod. Once the
+          material enters the machine, it is cut and subjected to pressure to be
+          processed into the shape of a mold. This process is repeated until the
+          final screw is shaped.
+        </p>
+        <p>
+          　Normally, screw manufacturing involves a cutting process, which
+          creates waste material. However, Aoiseira Factory's signature
+          <strong>cold forging process</strong> uses molds and pressure instead
+          of cutting, which allows them to make screws with 100kg of material,
+          resulting in no material loss.
+          <strong>"The processing method is SDGs,"</strong> Mr. Seki explained.
+        </p>
+        <p>
+          　The creation of molds for cold forging, machine adjustments, and the
+          design of the screw manufacturing process are all done by skilled
+          craftsmen. There are three craftsmen who can create molds at the
+          Yamanashi and headquarters factories. The craftsman at the
+          headquarters is the only one who can handle the entire process alone.
+          The creation of molds requires highly skilled craftsmanship. In
+          addition, adjusting the cold forging machines also requires the
+          craftsman's experience and intuition, making it a complex task.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="img-background" id="mission">
+  <h3 class="border">The Philosophy of President Seki and Aoiseira Factory</h3>
+  <div class="article-content2" style="text-align: left">
+    <div class="display">
+      <img
+        src="{{ url_for('static', filename='02aoiseira10.webp') }}"
+        alt="葵精螺製作所の理念"
+        class="dis-img"
+        width="100%"
+        style="margin-right: 3%"
+      />
+      <!-- 画像入れる -->
+      <div class="dis-p">
+        <p>
+          　For nearly half a century since its founding, Aoiseira Factory has
+          produced outstanding industrial products. At the heart of its
+          technology lies the "curiosity" and "open-mindedness" that Mr. Seki
+          has carried with him since childhood.
+        </p>
+        <p>
+          　As evidenced by the drum episode mentioned earlier, Mr. Seki was
+          always interested in the structure of various things. Through his
+          self-driven exploration, he nurtured knowledge and insight. By
+          shifting his mindset from <strong>"Why?"</strong> to
+          <strong>"So, what should we do about it?"</strong>, he was able to
+          flexibly adapt to difficult situations at work. This method has been
+          consistent at Aoiseira Factory since its inception.
+        </p>
+      </div>
+    </div>
+    <p>
+      　A representative example of this approach is the following story. Once,
+      a request came from an automobile manufacturer to produce a screw with an
+      unusually long neck. This product could not be made with standard tools,
+      so it seemed like an impossible request for competitors. However, Mr. Seki
+      did not give up. He modified the existing machines and successfully
+      extended the maximum neck length from 30mm to 41mm. As a result, he was
+      able to manufacture the parts successfully, which deepened the trust from
+      the client. Turning what seemed "impossible" into "possible" through trial
+      and error, Mr. Seki transformed many challenges into opportunities,
+      growing the factory without being consumed by the ever-changing society.
+    </p>
+    <p>
+      　These methods were not learned through external experiences but were
+      already inherent in him from a young age, making him nothing short of a
+      genius. However, his approach to work holds significant meaning for
+      Japan's future. With numerous social issues piling up and the challenges
+      surrounding Japan likely increasing, it is precisely in such times that
+      <strong>"a shift in perspective"</strong> and
+      <strong>"the power to make the impossible possible"</strong> will be
+      essential.
+    </p>
+    <div style="text-align: center">
+      <img
+        src="{{ url_for('static', filename='02aoiseira11.webp') }}"
+        alt="語る関社長"
+        class=""
+        width="70%"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="img-background" id="last">
+  <h3 class="border">Afterword</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　Through the interview with Mr. Seki and the coverage of Aoiseira
+      Factory, we not only learned about his journey but gained invaluable
+      lessons. It wasn't just about his successes, but also the unexpected
+      events and the steady, accumulated efforts that have shaped the current
+      version of Mr. Seki.
+    </p>
+    <p>
+      　Today, the philosophy of Aoiseira Factory, which emphasizes the idea of
+      <strong>"never deciding that something is impossible,"</strong> is
+      something that can resonate with everyone. With a smile, Mr. Seki
+      encouraged us, saying, "There’s nothing in this world that’s impossible,
+      so do your best!" Even though we have hardly experienced the same level of
+      success or setbacks in life as Mr. Seki, we were inspired by his words,
+      which gave us both the weight of life’s lessons and the courage to face
+      the future ahead.
+    </p>
+  </div>
+</div>
+
+<div class="img-background">
+  <h3 class="border">Member Introduction</h3>
+  <div class="box-area">
+    <div class="box-parent">
+      <div class="box-sentence">
+        I am interested in working as a writer and joined this project. I hope
+        to convey to you the emotion of my favorite downtown area of Tokyo in
+        the form of reporting of a town factory!
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='no_img.webp') }}"
+              alt="profile-photo"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>Ryosuke Noguchi</h3>
+          <p>interviewer / writer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-parent">
+      <div class="box-sentence">
+        I have a keen interest in craftsmanship and joined as a writer who can
+        observe and convey artisans' skills. I hope to enjoy the process while
+        delivering articles that capture their passion and techniques.
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='yo_a_img.webp') }}"
+              alt="profile-photo"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>Ayari Yoshida</h3>
+          <p>interviewer / writer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-parent">
+      <div class="box-sentence">
+        Although I am still a novice, I would like to learn every day so that I
+        can share with you the charm of the craftsmen of Ota Ward. Please look
+        forward to the growth of the website as well as the stories of Ota Ward
+        craftsmen.
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='to_img.webp') }}"
+              alt="profile-photo"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>Sakura</h3>
+          <p>interviewer / writer / web</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-parent">
+      <div class="box-sentence">
+        I participate as an advisor for interviews and article writing. I strive
+        to design interviews and write articles that clearly convey the essence
+        of artisans' lives and skills in an authentic and accessible way for
+        readers.
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='u_img.webp') }}"
+              alt="profile-photo"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>Dai Uehara</h3>
+          <p>proofreader</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box-parent">
+      <div class="box-sentence">
+        I love web creating and factory tour. I'll do my best to deliver the
+        fascinating craftmen's jobs in town factories in Ota Ward through this
+        website!
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='ki_img.webp') }}"
+              alt="profile-photo"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>Tomoya Kinami</h3>
+          <p>web</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

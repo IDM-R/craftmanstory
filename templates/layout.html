@@ -84,6 +84,7 @@
       </div>
       <!--けすowari-->
       {% if nf404 != True %}
+      {% if announce != True %}
       <div>
         <nav>
           <ul class="main-nav">
@@ -97,6 +98,7 @@
           </ul>
         </nav>
       </div>
+      {% endif %}
     </div>
 
     <div
@@ -121,6 +123,11 @@
       <div style="border-bottom: 4px dashed #ffff">
         <div style="margin-left: 30px; margin-right: 30px">
           <h4 style="word-break: keep-all;"><u>東京理科大学 経営学部 国際デザイン経営学科 Craftman Story部</u></h4>
+          <a href="https://www.tiktok.com/@craftmanstory_idm" target="_blank" style="display: block;">
+          <div style=" width: 100%;">
+            <div style="width: 20%; min-width: 150px; background-color: white; margin: 0 auto;"><img src="{{ url_for('static', filename='TikTok-logo-CMYK-Horizontal-Black.svg') }}"></div>
+          </div>
+          </a>
           <p>
             本コンテンツに関する全ての権利は著作権者に留保されております。無断でこれを複製・改変等することは厳に禁止されており、違反した場合は刑事罰及び民事罰を招来することになります。
           </p>
@@ -134,6 +141,9 @@
           <p><u>全般</u></p>
           <a href="/" class="footer_link">
             <p style="margin: 10px">Craftman Story部 トップページ</p></a
+          >
+          <a href="https://www.tiktok.com/@craftmanstory_idm" class="footer_link" target="_blank">
+            <p style="margin: 10px">Craftman Story部 TikTok</p></a
           >
           <a href="https://www.pio-ota.jp/" class="footer_link" target="_blank">
             <p style="margin: 10px">大田区産業振興協会 ホームページ</p></a
@@ -163,6 +173,12 @@
           >
           <a href="/vol/1" class="footer_link">
             <p style="margin: 10px">Vol.1 -岩井製作所</p></a
+          >
+          <a href="/vol/2" class="footer_link">
+            <p style="margin: 10px">Vol.2 -葵精螺製作所</p></a
+          >
+          <a href="/vol/3" class="footer_link">
+            <p style="margin: 10px">Vol.3 -玉川パイプ</p></a
           >
         </div>
       </div>

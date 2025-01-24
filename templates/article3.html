@@ -1,0 +1,273 @@
+{% extends "layout.html" %} {% block title %} Craftman Story Vol.3 -玉川パイプ
+{% endblock %} {% block home_photo %}{{ url_for('static',
+filename='03tamagawa_01.webp') }}{% endblock %} {% block home_content %}
+<h1 class="page-title1"><u>Vol.3</u></h1>
+<h1 class="page-title2">玉川パイプ</h1>
+{% endblock %}{% block main_content %}
+<div class="article-title">
+  <div class="title-page"><h2 class="title"></h2></div>
+  <p class="article-date">取材日 2024.11.13</p>
+  <p class="article-date">最終更新日 2025.1.24</p>
+  <p class="title-content">　こんにちは！</p>
+  <p class="title-content">
+    　Craftman Story
+    Vol.3です。今回は玉川パイプを取材してきました。玉川パイプの取材では、引抜鋼管の仕事の様子や玉川社長の話をお聞きすることができました。
+  </p>
+</div>
+<div class="img-background">
+  <h3 class="border">玉川パイプ概要</h3>
+  <div class="grid4">
+    <div>
+      <p>
+        　京急蒲田駅から1駅隣の雑色駅から徒歩10分。マンションと昔ながらの工場が立ち並ぶ都道沿いに<strong>玉川パイプ</strong>は位置しています。1959年創業の会社で、今回お話をお伺いした玉川社長は先代から工場を継いだ4代目です。大手メーカーが製造する鉄パイプを特殊サイズに加工する<strong>「引抜鋼管」</strong>を得意とし、10名ほどの職人が腕を振るっています。
+      </p>
+      <p>
+        玉川パイプのHP :
+        <a href="https://tamagawa-pipe.com/">https://tamagawa-pipe.com/</a>
+      </p>
+      <p class="photo_text" style="margin-top: 10px">写真1 : 工場の中</p>
+    </div>
+    <img
+      src="{{ url_for('static', filename='03tamagawa_02.webp') }}"
+      width="100%"
+    />
+  </div>
+</div>
+<div class="img-background">
+  <h3 class="border">引抜鋼管とは</h3>
+  <p class="article-content2" style="text-align: left">
+    　今回、引抜鋼管の作業現場を見学させていただきました。作業の様子を動画にまとめましたので、ぜひご覧ください。また、玉川パイプのホームページにも引抜鋼管についての詳しい説明がありますので、併せてご覧ください。
+  </p>
+  <p class="article-content2" style="text-align: left">
+    玉川パイプHP「引抜鋼管とは?」 :
+    <a href="https://tamagawa-pipe.com/pipes/"
+      >https://tamagawa-pipe.com/pipes/</a
+    >
+  </p>
+  <div class="article-content2">
+    <iframe
+      width="100%"
+      style="aspect-ratio: 659/369"
+      src="https://www.youtube.com/embed/nc0eqAsj4xg"
+      title="玉川パイプ 引抜鋼管とは"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p class="article-content2" style="text-align: left">
+    <span class="photo_text">(以下上の動画と同じ内容)</span>
+  </p>
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='03tamagawa_03.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　<strong>引抜鋼管</strong>とは、鉄パイプを引き伸ばして太さを自由に調整できる加工方法です。通常、大手メーカーは決められた規格に基づいて特定サイズのパイプを製造します。引抜鋼管を用いることで、これらのパイプを使用目的に合わせた正確なサイズに調整することができます。
+      </p>
+      <p>
+        　玉川パイプの引抜鋼管は大きく4つの工程があります。<strong>先付け、焼きなまし、酸洗・潤滑、伸管</strong>です。
+      </p>
+    </div>
+    <img
+      src="{{ url_for('static', filename='03tamagawa_04.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　まずは<strong>先付け</strong>です。先付けとは、パイプの先端のみの太さを調整する工程です。先端を窯で熱してパイプを柔らかくし、決まったサイズの型に通すことで太さを調整します。パイプにはそれぞれクセがあるため、<strong>パイプの色を見て適切な加熱時間を見極めることが、職人の腕の見せどころ</strong>となっています。
+      </p>
+    </div>
+    <img
+      src="{{ url_for('static', filename='03tamagawa_05.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　次に<strong>焼きなまし</strong>です。この工程では、パイプ全体を高温で熱することで、後の伸管作業での加工をしやすくします。
+      </p>
+      <p>
+        　続いて<strong>酸洗・潤滑</strong>です。焼きなまし工程で付着した黒いすす（スケール）を酸性溶液で除去し、アルカリ性溶液で中和します。その後、伸管作業のためにパイプ全体に潤滑油を塗布します。
+      </p>
+    </div>
+
+    <img
+      src="{{ url_for('static', filename='03tamagawa_06.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　最後に<strong>伸管</strong>です。伸管工程では、先付けで調整したパイプの先端を足がかりとして、機械で一気に型を通して引っ張ります。これによってパイプ全体を均一な太さに仕上げることができます。<strong>高度な技術</strong>を要する作業のため、ベテラン職人が担当しています。
+      </p>
+      <p>
+        　こうして太さが調整されたパイプは、大田区内の他の町工場で溶接や加工が施され、最終的にクレーンなどの重機部品をはじめとする様々な製品となります。
+      </p>
+      <p>
+        　玉川パイプは、大手メーカーや近隣の工場と協力して、<strong>中間工程として大事な役割</strong>を背負っているのです。
+      </p>
+    </div>
+  </div>
+</div>
+<div class="img-background">
+  <h3 class="border">取材班びっくりポイント!</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      我々が玉川パイプを取材、インタビューした中で4つ驚いたポイントがありました。
+    </p>
+    <ol style="font-weight: bold">
+      <a href="#strength"><li>玉川パイプの強み</li></a>
+      <a href="#sampou"><li>自社だけではない三方よし</li></a>
+      <a href="#tech"><li>技術を発信するために</li></a>
+      <a href="#career"><li>できることを確実に</li></a>
+    </ol>
+  </div>
+</div>
+<div class="img-background" id="strength">
+  <h3 class="border">玉川パイプの強み</h3>
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='03tamagawa_07.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p style="margin: 0">
+        　玉川パイプの強みは、<strong>小規模であるからこそ実現できる柔軟な製造体制</strong>です。この柔軟さを活かして、玉川パイプでは<strong>多重構造材</strong>の開発に取り組んでいます。多重構造材とは複数の金属を組み合わせたもので、写真は鉄と銅を組み合わせた事例です。鉄は単価が安く加工がしやすい特徴があり、銅は電気を通しやすいという特徴があります。多重構造材ではこれら両方の利点を活かすことができるのです。実は、この多重構造材はリニア新幹線のトンネルで使用されています。トンネル内には電気を逃がすためのアース設備が必要ですが、複数のパイプを接続する必要があるため、加工性と通電性の両方が求められます。この要件を満たせる多重構造材は最適な選択となっています。
+      </p>
+      <p class="photo_text" style="margin-top: 10px">写真6 : 多重構造材</p>
+    </div>
+  </div>
+</div>
+<div class="img-background" id="sampou">
+  <h3 class="border">自社だけではない三方よし</h3>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　仕事をする上で大事なことは、お客さん、協力業者、自分たちの三者ともがよくなるように、<strong>三方よしの関係</strong>を築くことだと玉川社長は仰っていました。「お客さんを大切にすることも大事だが、それ以上に協力業者さんを大切にする」。玉川社長が先代から教わったのは、自分たちの作ったものに付加価値をつけるのは業者さんであり、彼らを大切にしなければこちらも仕事がなくなってしまうということだったそうです。
+    </p>
+    <p>
+      　大田区の町工場は互いに協力して自分たちのできる仕事を分担し、支え合っているという印象がありましたが、玉川社長のお話はまさにこの通りだと感じました。
+    </p>
+    <p>
+      　例えば、玉川パイプでは鉄パイプの加工を得意としますが、異なる素材のアルミパイプ等では別の企業と協業して顧客の様々なニーズに応えることもあるそうです。
+    </p>
+    <p>
+      　<strong>大田区町工場ネットワーク</strong>を活用して、玉川パイプは今日も動いています。
+    </p>
+  </div>
+</div>
+
+<div class="img-background" id="tech">
+  <h3 class="border">技術を発信するために</h3>
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='03tamagawa_08.webp') }}"
+      width="100%"
+    />
+    <div class="article-content2" style="text-align: left">
+      <p>
+        　玉川パイプは<strong>情報発信</strong>を積極的に行っています。技術は持っているだけでは埋もれてしまうから発信することが大事だと、玉川社長はさまざまな取り組みを行っています。こんなものがあったらおもしろいなと思って作った金属パイプと木材の多重構造材のサンプルをお客さんの会社に置いてみたところ、新しい素材の多重構造材を作れないかと相談を受けたそうです。ほかにも、大田区産業振興協会主催のイベントに出展するといった活動を行っています。
+      </p>
+      <p class="photo_text" style="margin-top: 10px">
+        写真7 : イベントでの玉川パイプのブース
+      </p>
+    </div>
+  </div>
+</div>
+<div class="img-background" id="career">
+  <h3 class="border">できることを確実に</h3>
+  <div class="grid4">
+    <img
+      src="{{ url_for('static', filename='03tamagawa_09.webp') }}"
+      width="100%"
+    />
+    <div>
+      <p>
+        　玉川社長の前職はINAX (現LIXIL)
+        の営業でした。先代の父が経営していた玉川パイプをはじめから継ごうと考えていたわけではなく、様々な方から大田区におけるモノづくり技術の素晴らしさを聞く中で興味を持ち、家業であった町工場を継ごうと思ったそうです。先代がどんな仕事をしていたかなどは詳しくは知らず、知識がほぼないまま工場を始めた社長は現場を一年ほどやりましたが現在は<strong>経営に専念</strong>しています。マルチな人材より、役割分担をしてその作業が得意な人に任せた方が後進も育つという方針だそうです。
+      </p>
+      <p class="photo_text" style="margin-top: 10px">
+        写真7 : インタビューに応じてくださった玉川社長
+      </p>
+    </div>
+  </div>
+  <div class="article-content2" style="text-align: left">
+    <p>
+      　亡くなった先代は玉川社長が工場を継ぐことに反対しており、自分の代で工場を畳むつもりだったそうです。玉川社長も小さい頃は継ぐ気は全くなく、東京を出て県外で勤めたときに大田区がどんな街なのか、父がどんな仕事をしているのかを聞いて興味を持ったことがきっかけで「人生一度きりだし、やりたいことをやろう」と工場を継ぐことにしました。
+    </p>
+    <p>
+      　周囲からどんどん工場がなくなりマンションや戸建てが建っていることを勿体ないと思った社長は、<strong>大田区を活性化して、少しでも外から大田区に仕事を貰って、未来へつなげていけるような存在</strong>になりたいと仰っていました。
+    </p>
+  </div>
+</div>
+
+<div class="img-background">
+  <h3 class="border">メンバー紹介</h3>
+  <div class="box-area">
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        『伝わりやすい文章』をモットーに記事執筆などをやっていこうと思っています。記事制作の経験はありませんが、書くことは大好きです。素人なりに一生懸命頑張ります。よろしくお願いします！
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='ko_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>小松 すず</h3>
+          <p>取材・執筆担当</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        web制作も工場見学も大好きです。大田区の町工場の職人さんの仕事と魅力を、このwebサイトでお伝えできるように頑張ります!
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='ki_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>木南 知也</h3>
+          <p>取材・執筆・web・動画制作担当</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-parent">
+      <div class="box-sentence non_observed5">
+        インタビュー・記事執筆のアドバイザーとして活動に参加しています。職人さんの人生や技術の「ありのまま」を読み手にわかりやすく伝えられるようなインタビュー設計、記事執筆を心掛けています。
+      </div>
+      <div class="box">
+        <div class="box-img2">
+          <div class="box-img">
+            <img
+              src="{{ url_for('static', filename='u_img.webp') }}"
+              alt="個人の画像"
+              class="writer-box"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="box-text">
+          <h3>上原 大</h3>
+          <p>校正担当</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

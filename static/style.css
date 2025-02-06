@@ -562,16 +562,16 @@ body {
 }
 
 /* display */
-.display{
+.display {
   display: flex;
-  gap:2px;
+  gap: 2px;
 }
 
-.dis-img{
-  width:50%;
+.dis-img {
+  width: 50%;
 }
 
-.dis-p{
+.dis-p {
   text-align: left;
 }
 
@@ -626,9 +626,9 @@ footer {
   margin-right: 20%;
 }
 
-.article-content3{
-  margin-left:40%;
-  font-size:20px
+.article-content3 {
+  margin-left: 40%;
+  font-size: 20px;
 }
 
 .article-date {
@@ -684,6 +684,73 @@ footer {
   color: grey;
   margin: 0;
 }
+
+/** coderetreatやアプリ使いませんかのカード **/
+.l-wrapper_01 {
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+  animation-name: moving-up-down2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.l-wrapper_01_base {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.h2_text {
+  display: block;
+}
+
+.h3_text {
+  display: none;
+}
+
+.mini_index2 {
+  width: fit-content;
+  border: none;
+  border-bottom: 4px dashed #0c0c0c;
+  text-align: center;
+}
+
+.-compact1 {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #003366;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.-compact1:hover,
+.-compact1:focus {
+  background-color: #183e65;
+}
+
+@keyframes moving-up-down2 {
+  0% {
+    transform: translateY(10px);
+    box-shadow: 0 -7px 16px rgb(214, 213, 213), 0 -3px 16px rgb(214, 213, 213);
+    transition: all 0.5s;
+  }
+  100% {
+    transform: translateY(-10px);
+    box-shadow: 0 7px 16px rgb(214, 213, 213), 0 3px 16px rgb(214, 213, 213);
+    transition: all 0.5s;
+  }
+}
+
+/** coderetreatやアプリ使いませんかのカードここまで **/
 
 /**メンバー紹介のところのcss**/
 .box-area {
@@ -789,6 +856,14 @@ footer {
     width: 15%;
   }
 
+  .h2_text {
+    display: none;
+  }
+
+  .h3_text {
+    display: block;
+  }
+
   .box-area {
     grid-template-columns: 1fr;
   }
@@ -807,15 +882,15 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .display{
+  .display {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
-  } 
+  }
 
-  .dis-img{
+  .dis-img {
     grid-template-columns: 1fr;
-    width:100%;
+    width: 100%;
   }
 
   .scroll_down {

@@ -564,7 +564,7 @@ body {
 /* display */
 .display {
   display: flex;
-  gap: 2px;
+  gap: 4px;
 }
 
 .dis-img {
@@ -929,6 +929,11 @@ footer {
   .article-content {
     margin-left: 30px;
     margin-right: 30px;
+  }
+
+  .article-content3 {
+    margin-left:30px;
+    margin-right:30px;
   }
 
   .article-title {
